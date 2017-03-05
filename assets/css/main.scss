@@ -37,3 +37,8 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+// Theme
+.site-header {
+  background: red;
+}
