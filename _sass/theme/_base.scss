@@ -17,12 +17,18 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
+  /*
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+  */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
 }
 
 
@@ -36,7 +42,11 @@ ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-color;
+  font-family: $header-font-family;
+  font-weight: 700;
+}
 
 
 /**
@@ -82,7 +92,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  //font-weight: $base-font-weight;
 }
 
 
@@ -110,12 +120,14 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic;
+  color: #000;
+  //border-left: 4px solid $grey-color-light;
+  //padding-left: $spacing-unit / 2;
+  font-size: 4rem;
+  line-height: 4.6rem;
+  //letter-spacing: -1px;
+  font-family: $header-font-family;
+  font-weight: 700;
 
   > :last-child {
     margin-bottom: 0;
@@ -123,6 +135,11 @@ blockquote {
 }
 
 
+@media (min-width: 1200px) {
+  blockquote {
+    margin-left: -14rem;
+  }
+}
 
 /**
  * Code formatting
@@ -195,4 +212,20 @@ pre {
   path {
     fill: $grey-color;
   }
+}
+
+/**
+* Custom
+**/
+$margin-l:        7rem;
+.bottom-line {
+    border-bottom: 3px solid black;
+    //padding-bottom: 9px;
+    //width: 100%;
+}
+.margin-l-top {
+  margin-top: $margin-l;
+}
+.margin-l-bottom {
+  margin-bottom: $margin-l;
 }

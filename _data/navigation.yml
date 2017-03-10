@@ -1,0 +1,10 @@
+# Menu navigation links
+
+- title: Blog
+  url: /jekyll/
+
+- title: Work
+  url: /jekyll/
+
+- title: About
+  url: /theme-setup/

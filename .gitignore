@@ -1,3 +1,7 @@
+# OS or Editor folders
+.DS_Store
+
+# Jekyllg
 _site
 .sass-cache
 .jekyll-metadata
