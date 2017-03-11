@@ -1,0 +1,37 @@
+{
+  "name": "ivan",
+  "version": "1.0.0",
+  "description": "Jekyll bloging theme",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "ncp node_modules/bootstrap/scss _sass/bootstrap/ & ncp node_modules/bootstrap/dist/js/bootstrap.js assets/js/bootstrap.js & ncp node_modules/jquery/dist/jquery.js assets/js/jquery.js",
+    "lint": "jshint assets/js/main.js",
+    "uglify": "uglifyjs node_modules/jquery/dist/jquery.js node_modules/bootstrap/dist/js/bootstrap.js assets/js/main.js -m -c -o assets/js/main.min.js",
+    "watch": "watch 'npm run build' assets/js/main.js",
+    "build": "npm run lint && npm run uglify",
+    "postinstall": "npm run copy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chromjak/chromjak.github.io.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "Ivan Chromjak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chromjak/chromjak.github.io/issues"
+  },
+  "homepage": "https://github.com/chromjak/chromjak.github.io#readme",
+  "devDependencies": {
+    "jshint": "latest",
+    "ncp": "latest",
+    "uglify-js": "latest",
+    "watch": "latest"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
