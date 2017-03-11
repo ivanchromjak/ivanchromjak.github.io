@@ -14,7 +14,9 @@
   <script src="{{ site.url }}/assets/js/main.min.js"></script>
   <script type="text/javascript">
     var feed = new Instafeed({
-        clientId: '451099153c6a4481b917d4e7931f4619'
+      get: 'tagged',
+      tagName: 'awesome',
+      clientId: '451099153c6a4481b917d4e7931f4619'
     });
     feed.run();
   </script>
