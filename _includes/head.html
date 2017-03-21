@@ -12,15 +12,19 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <script src="{{ site.url }}/assets/js/main.min.js"></script>
-  <script type="text/javascript">
-    var feed = new Instafeed({
-      get: 'tagged',
-      tagName: 'awesome',
-      clientId: '451099153c6a4481b917d4e7931f4619',
-      accessToken: '1045245980.ba4c844.e4e85ffbd253421ebf463634a9245454'
-    });
-    feed.run();
-  </script>
+  {% if site.instagram_accesstoken %}
+    <script type="text/javascript">
+      var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        accessToken: '{{ site.instagram_accesstoken }}',
+        limit: 20,
+        resolution: 'standard_resolution',
+        links: false
+      });
+      feed.run();
+    </script>
+  {% endif %}
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
