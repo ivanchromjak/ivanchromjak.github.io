@@ -156,8 +156,12 @@ $spacers: (
   7: (
     x: ($spacer-x * 6),
     y: ($spacer-y * 6)
-  )
-);
+    ),
+  8: (
+      x: ($spacer-x * 7),
+      y: ($spacer-y * 7)
+    )
+  );
 // $border-width: 1px;
 
 // This variable affects the `.h-*` and `.w-*` classes.

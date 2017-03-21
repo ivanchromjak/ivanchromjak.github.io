@@ -58,6 +58,44 @@ $on-laptop:        800px !default;
   //margin-bottom: $margin-l;
 }
 
+.title-1 {
+  font-size: 2.4rem;
+}
+
+@include media-breakpoint-up(sm) {
+  .title-1 {
+    font-size: 3rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .title-1 {
+    font-size: 5rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .title-1 {
+    font-size: 6.6rem;
+  }
+}
+.author-box {
+  img {
+    max-width: 200px;
+  }
+  p {
+
+  }
+  a {
+    display: block;
+  }
+}
+.author-bio {
+
+}
+.brand img {
+  max-width: 120px;
+}
 .site-header {
   font-family: $font-family-sans-serif;
   font-weight: $headings-font-weight;
@@ -103,7 +141,11 @@ $on-laptop:        800px !default;
     background: #ecf0f1;
   }
 }
-
+/*
+.site-footer {
+  background: $gray-lightest;
+}
+*/
 @include media-breakpoint-up(md) {
   .site-nav {
     li {

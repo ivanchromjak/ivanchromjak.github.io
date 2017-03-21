@@ -3,11 +3,11 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header mb-6">
+  <header class="post-header mb-5 mb-lg-8">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-4">
-          <h1 class="post-title display-1 m-0 pb-7" itemprop="name headline">{{ page.title | escape }}</h1>
+          <h1 class="title-1 m-0 pb-5 pb-lg-7" itemprop="name headline">{{ page.title | escape }}</h1>
         </div>
       </div>
     </div>
@@ -15,12 +15,25 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-3">
-        <img class="gravatar img-fluid" src="https://www.gravatar.com/avatar/5e955fa7e33997bd13b5a1308bb2ce8b?s=300">
-      </div>
       <div class="col-lg-7 offset-lg-1">
         <div class="post-content" itemprop="articleBody">
           {{ content }}
+        </div>
+      </div>
+      <div class="col-lg-3 flex-lg-first">
+        <div class="author-box">
+          <img class="author-img img-fluid" src="/assets/img/ivan.jpg">
+          {% if site.author_bio %}
+            <p class="mt-4 mb-0">{{ site.author_bio }}</p>
+          {% endif %}
+
+          {% if site.twitter_username %}
+            <a class="mt-2" href="#">{{ site.twitter_username }}</a>
+          {% endif %}
+
+          {% if site.github_username %}
+            <a class="mt-2" href="#">{{ site.github_username }}</a>
+          {% endif %}
         </div>
       </div>
     </div>

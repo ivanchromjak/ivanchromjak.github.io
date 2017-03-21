@@ -1,46 +1,25 @@
-<footer class="site-footer">
+<footer class="site-footer pt-5 pb-5">
 
-  <div class="wrapper">
+  <div class="container">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <nav class="nav">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      {% if site.github_username %}
+        <a class="nav-link" href="#">{% include icon-github.html username=site.github_username %}</a>
+      {% endif %}
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <img class="gravatar" src="https://www.gravatar.com/avatar/5e955fa7e33997bd13b5a1308bb2ce8b?s=140">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
+      {% if site.twitter_username %}
+        <a class="nav-link" href="#">{% include icon-twitter.html username=site.twitter_username %}</a>
+      {% endif %}
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+      {% if site.email %}
+        <a class="nav-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {% endif %}
+      <a class="nav-link" href="#">{{ site.title | escape }}</a>
+    </nav>
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
+    <p><small>{{ site.footer_text }}</small></p>
 
   </div>
 
