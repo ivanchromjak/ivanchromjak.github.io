@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="505px" height="193px" viewBox="0 0 505 193" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logo-dark" sketch:type="MSLayerGroup" transform="translate(-72.000000, -56.000000)" font-weight="normal" sketch:alignment="middle" fill="#000000">
+            <text id="]" sketch:type="MSTextLayer" font-family="Courier New" font-size="260" letter-spacing="11.5700073">
+                <tspan x="492.202301" y="216">]</tspan>
+            </text>
+            <text id="[" sketch:type="MSTextLayer" font-family="Courier New" font-size="260" letter-spacing="11.5700073">
+                <tspan x="0.202301025" y="216">[</tspan>
+            </text>
+            <text id="IVAN" sketch:type="MSTextLayer" font-family="Hiragino Maru Gothic ProN" font-size="120" letter-spacing="11.9879999">
+                <tspan x="159.4252" y="198">IVA</tspan>
+                <tspan x="397.7092" y="198" letter-spacing="14.3856001">N</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
