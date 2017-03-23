@@ -81,20 +81,17 @@ $on-laptop:        800px !default;
 }
 .author-box {
   img {
-    max-width: 200px;
+    //max-width: 200px;
   }
   p {
-
+    color: #8b8e90;
   }
   a {
     display: block;
   }
 }
-.author-bio {
-
-}
 .brand img {
-  max-width: 180px;
+  max-width: 160px;
 }
 .site-header {
   font-family: $font-family-sans-serif;

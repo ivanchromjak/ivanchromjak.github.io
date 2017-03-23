@@ -21,20 +21,7 @@ layout: default
         </div>
       </div>
       <div class="col-lg-3 flex-lg-first">
-        <div class="author-box">
-          <img class="author-img img-fluid" src="/assets/img/ivan.jpg">
-          {% if site.author_bio %}
-            <p class="mt-4 mb-0">{{ site.author_bio }}</p>
-          {% endif %}
-
-          {% if site.twitter_username %}
-            <a class="mt-2" href="#">{{ site.twitter_username }}</a>
-          {% endif %}
-
-          {% if site.github_username %}
-            <a class="mt-2" href="#">{{ site.github_username }}</a>
-          {% endif %}
-        </div>
+        {% include author.html %}
       </div>
     </div>
   </div>
@@ -42,4 +29,5 @@ layout: default
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
+  
 </article>

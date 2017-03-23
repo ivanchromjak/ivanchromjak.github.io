@@ -6,12 +6,49 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:700" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <script src="{{ site.url }}/assets/js/main.min.js"></script>
+  {% if site.instagram_accesstoken %}
+    {% assign url = '{{image}}' %}
+    {% assign go_to = '{{link}}' %}
+    <script>
+      $(function(){
+
+        if($('#instafeed').length > 0){
+          var feed = new Instafeed({
+            //get: 'user',
+            //userId: '1045245980',
+            get: 'tagged',
+            tagName: 'awesome',
+            accessToken: '{{ site.instagram_accesstoken }}',
+            limit: 30,
+            resolution: 'standard_resolution',
+            template: '<div class="grid-item"><a href="{{go_to}}"><img class="img-fluid" src="{{url}}" /></a></div>',
+            after: function() {
+              // init Masonry
+              var $grid = $('.grid').masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer',
+                gutter: 30
+              });
+              // layout Isotope after each image loads
+              $grid.imagesLoaded().progress( function() {
+                $grid.masonry();
+              });
+            }
+          });
+          feed.run();
+        }
+
+      });
+    </script>
+  {% endif %}
+
+
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
