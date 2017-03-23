@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Setting Up Jekyll Site on Github"
+title:  "Wecome to My New Site"
 date:   2017-03-05 16:19:59 +0100
 categories: jekyll update
 ---
-This is a post excerpt to test this functionality during development phase so you can stop reading this now.
+Again this is another post excerpt to test this functionality during development phase so you can stop reading this now.
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -99,26 +99,14 @@ Content Cell | Content Cell
 ---
 
 ### Code
-```javascript
-/**
- * Does a thing
- */
-function helloWorld(param1, param2) {
-  var something = 0;
 
-  // Do something
-  if (2.0 % 2 == something) {
-    console.log('Hello, world!');
-  } else {
-    return null;
-  }
+	var num1 = 3;
+	var num2 = 2;
 
-  // @TODO comment
-}
-```
+	function add(a, b) {
+		return a + b;
+	}
 
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+	var sum = add(num1, num2);
+
+	console.log(sum);

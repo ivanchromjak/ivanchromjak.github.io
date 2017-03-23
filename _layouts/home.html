@@ -4,22 +4,33 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-4">
+          <h1 class="page-heading title-1 m-0 pb-5 pb-lg-7">Blog</h1>
+          <div>{{ content }}</div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 offset-lg-1">
+        <div class="post-list">
+          {% for post in site.posts %}
+            <div class="entry mb-5 mb-lg-6">
+              <h2 class="title-2 mb-3"><a class="post-link link-inverted" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+              {{ post.excerpt }}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-lg-3 flex-lg-first">
+        {% include author.html %}
+      </div>
+    </div>
+  </div>
 
 </div>

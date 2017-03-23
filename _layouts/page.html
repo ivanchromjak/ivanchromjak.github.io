@@ -4,11 +4,24 @@ layout: default
 <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-4">
+          <h1 class="title-1 m-0 pb-5 pb-lg-7" itemprop="name headline">{{ page.title | escape }}</h1>
+        </div>
+      </div>
+    </div>
   </header>
-
-  <div class="post-content">
-    {{ content }}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 offset-lg-1">
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+      </div>
+      <div class="col-lg-3 flex-lg-first">
+        <img class="author-img img-fluid" src="/assets/img/ivan.jpg">
+      </div>
+    </div>
   </div>
-
 </article>

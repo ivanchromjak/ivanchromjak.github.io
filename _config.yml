@@ -22,12 +22,15 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ichromjak
 github_username:  chromjak
 instagram_accesstoken: 1045245980.ba4c844.e4e85ffbd253421ebf463634a9245454
-# google_analytics: 
+# google_analytics:
 footer_text: Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.
 author_bio: Hi, I'm Ivan, a full stack web developer and the author of this blog!
+# paginate: 2
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
 # theme: minima
 gems:
   - jekyll-feed

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setting Up Jekyll Site on Github"
+title:  "Getting started with Jekyll Site on Github"
 date:   2017-03-05 16:19:59 +0100
 categories: jekyll update
 ---
@@ -99,26 +99,14 @@ Content Cell | Content Cell
 ---
 
 ### Code
-```javascript
-/**
- * Does a thing
- */
-function helloWorld(param1, param2) {
-  var something = 0;
 
-  // Do something
-  if (2.0 % 2 == something) {
-    console.log('Hello, world!');
-  } else {
-    return null;
-  }
+	var num1 = 3;
+	var num2 = 2;
 
-  // @TODO comment
-}
-```
+	function add(a, b) {
+		return a + b;
+	}
 
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+	var sum = add(num1, num2);
+
+	console.log(sum);

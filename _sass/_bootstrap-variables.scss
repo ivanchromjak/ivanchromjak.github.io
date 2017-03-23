@@ -75,7 +75,7 @@
 
 // Start with assigning color names to specific hex values.
 // $white:  #fff;
-// $black:  #000;
+$black:  #000;
 // $red:    #d9534f;
 // $orange: #f0ad4e;
 // $yellow: #ffd500;
@@ -177,7 +177,7 @@ $spacers: (
 // Settings for the `<body>` element.
 
 // $body-bg:       $white;
-// $body-color:    $gray-dark;
+// $body-color:    #494e52;
 // $inverse-bg:    $gray-dark;
 // $inverse-color: $gray-lighter;
 
@@ -188,7 +188,7 @@ $spacers: (
 
 // $link-color:            $brand-primary;
 // $link-decoration:       none;
-$link-hover-color:      $brand-primary; //darken($link-color, 15%);
+$link-hover-color:      $black; //darken($link-color, 15%);
 // $link-hover-decoration: underline;
 
 
@@ -266,7 +266,7 @@ $line-height-base: 1.8;
 $headings-font-family:   $font-family-sans-serif;
 $headings-font-weight:   700;
 // $headings-line-height:   1.1;
-// $headings-color:         inherit;
+$headings-color:         $black;
 
 $display1-size: 6.6rem;
 // $display2-size: 5.5rem;
