@@ -19,10 +19,8 @@
 
         if($('#instafeed').length > 0){
           var feed = new Instafeed({
-            //get: 'user',
-            //userId: '1045245980',
-            get: 'tagged',
-            tagName: 'awesome',
+            get: 'user',
+            userId: '1045245980',
             accessToken: '{{ site.instagram_accesstoken }}',
             limit: 30,
             resolution: 'standard_resolution',
