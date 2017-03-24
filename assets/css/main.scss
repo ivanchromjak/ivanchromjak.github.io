@@ -51,5 +51,7 @@ $on-laptop:        800px;
 
 @import "_bootstrap-variables";
 @import "bootstrap/bootstrap";
+@import "_syntax-highlighting";
+
 // Import partials from the `minima` theme.
 @import "theme";

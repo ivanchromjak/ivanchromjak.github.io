@@ -56,6 +56,8 @@ The following snippet of text is rendered as *italicized text*.
 
 For example, `<section>` should be wrapped as inline.
 
+![My helpful screenshot](/uploads/2017-08-05-ivan.jpg)
+
 ---
 
 ### Unordered List

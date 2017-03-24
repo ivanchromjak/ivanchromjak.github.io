@@ -22,6 +22,9 @@
             get: 'user',
             userId: '1045245980',
             accessToken: '{{ site.instagram_accesstoken }}',
+            filter: function(image) {
+              return image.tags.indexOf('dev') >= 0;
+            },
             limit: 30,
             resolution: 'standard_resolution',
             template: '<div class="grid-item"><a href="{{go_to}}"><img class="img-fluid" src="{{url}}" /></a></div>',

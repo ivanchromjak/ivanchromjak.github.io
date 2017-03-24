@@ -18,7 +18,8 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Hi, I'm Ivan, a full stack web developer, designer and the author of this blog.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ivanchromjak.com/" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: pretty
+url: "https://ivanchromjak.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter:
   username: ichromjak
 
