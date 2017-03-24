@@ -48,6 +48,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+/**
+* Social Icons in Links
+**/
+a {
+  &:hover {
+    .icon path {
+      fill: $black;
+    }
+  }
+  .icon path {
+    fill: $brand-primary;
+  }
+}
+
+
 /**
 * Home Page
 **/
@@ -70,6 +86,7 @@ body {
     margin-bottom: 1.6rem;
   }
 }
+
 /**
 * Custom
 **/
@@ -161,22 +178,8 @@ a {
 
 
 .author-box {
-  img {
-    //max-width: 200px;
-  }
-  p {
-    //color: #8b8e90;
-  }
   a {
     display: block;
-    &:hover {
-      .icon path {
-        fill: $black;
-      }
-    }
-  }
-  .icon path {
-    fill: $brand-primary;
   }
 }
 .brand img {

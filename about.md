@@ -1,15 +1,9 @@
 ---
-layout: page
-title: About
+layout: about
+title: About / Work
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm Ivan Chromjak a freelance web developer making beautiful and useful things on the web since 2002.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Working with design, front and back end technologies, in teams such as PressApps or independently mostly on WordPress plugins and themes, Jekyll themes and HTML templates. Bellow is some on my design work, front and back end work is available on [Github](https://github.com/chromjak){:target="_blank"}. Want to contact me or just say hello connect on [Twitter](https://twitter.com/ichromjak){:target="_blank"}.

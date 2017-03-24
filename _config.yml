@@ -16,15 +16,25 @@
 title: Ivan Chromjak
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Ivan, a front end web developer. I'm the author of this blog, nice to meet you!
+  Hi, I'm Ivan, a full stack web developer, designer and the author of this blog.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ivanchromjak.com/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter:
+  username: ichromjak
+
+logo: "/assets/img/logo-dark.svg"
+social:
+  name: Ben Balter
+  links:
+    - https://twitter.com/ichromjak
+    - https://www.linkedin.com/in/ivan-chromjak-2946b043/
+    - https://github.com/chromjak
+
 twitter_username: ichromjak
 github_username:  chromjak
 instagram_accesstoken: 1045245980.ba4c844.e4e85ffbd253421ebf463634a9245454
 # google_analytics:
 footer_text: Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.
-author_bio: Hi, I'm Ivan, a full stack web developer and the author of this blog!
 # paginate: 2
 
 # Build settings
@@ -34,6 +44,8 @@ highlighter: rouge
 # theme: minima
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
 exclude:
   - Gemfile
   - Gemfile.lock
