@@ -25,7 +25,7 @@ layout: default
   <div class="container">
     <div class="portfolio grid grid-col-2">
       <div class="grid-sizer"></div>
-        {% for image in site.static_files %}
+        {% for image in site.static_files reversed %}
           {% if image.path contains 'uploads/portfolio' %}
               <div class="grid-item"><img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" /></div>
           {% endif %}

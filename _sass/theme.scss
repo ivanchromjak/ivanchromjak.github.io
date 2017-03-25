@@ -272,7 +272,10 @@ a {
 .grid-item img {
   display: block;
   max-width: 100%;
-  border: solid 1px #e3eaef;
+  //border: solid 1px #e3eaef;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(142,154,163,0.2);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(142,154,163,0.2);
+  box-shadow: 0px 0px 15px 1px rgba(142,154,163,0.2);
 }
 
 .grid-sizer,
