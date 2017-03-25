@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: portfolio
 title: About
 permalink: /about/
 published: true

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header mb-5 mb-lg-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-4">
+          <h1 class="title-1 m-0 pb-5 pb-lg-7" itemprop="name headline">{{ page.title | escape }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 offset-lg-4">
+          <div class="page-content" itemprop="articleBody">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="portfolio grid grid-col-2">
+      <div class="grid-sizer"></div>
+        {% for image in site.static_files %}
+          {% if image.path contains 'uploads/portfolio' %}
+              <div class="grid-item"><img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" /></div>
+          {% endif %}
+        {% endfor %}
+      </div>
+  </div>
+
+</article>

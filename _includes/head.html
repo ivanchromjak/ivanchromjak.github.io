@@ -26,10 +26,13 @@
             },
             limit: 30,
             resolution: 'standard_resolution',
-            template: '<div class="grid-item"><a href="{{go_to}}"><img class="img-fluid" src="{{url}}" /></a></div>',
+            template: '<div class="grid-item"><a href="{{go_to}}"><img class="img-fluid" data-source="{{url}}" /></a></div>',
             after: function() {
+
+              jQuery('#instafeed img').each(function(key,element) { jQuery(element).attr('src', jQuery(element).attr('data-source').replace("/s640x640/","/")); });
+
               // init Masonry
-              var $grid = $('.grid').masonry({
+              var $grid = $('.instagram.grid').masonry({
                 itemSelector: '.grid-item',
                 percentPosition: true,
                 columnWidth: '.grid-sizer',
@@ -46,6 +49,22 @@
       });
     </script>
   {% endif %}
+
+  <script>
+    $(function(){
+      // init Masonry
+      var $grid = $('.portfolio.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer',
+        gutter: 80
+      });
+      // layout Isotope after each image loads
+      $grid.imagesLoaded().progress( function() {
+        $grid.masonry();
+      });
+    });
+  </script>
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
