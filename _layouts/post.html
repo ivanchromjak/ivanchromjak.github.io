@@ -15,14 +15,14 @@ layout: default
 
   <div class="container">
     <div class="row">
+      <div class="col-lg-3 sidebar">
+        {% include author.html %}
+      </div>
       <div class="col-lg-7 offset-lg-1">
         <div class="post-content" itemprop="articleBody">
           {{ content }}
           {% include share.html %}
         </div>
-      </div>
-      <div class="col-lg-3 flex-lg-first">
-        {% include author.html %}
       </div>
     </div>
   </div>

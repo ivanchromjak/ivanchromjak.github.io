@@ -48,7 +48,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
+@include media-breakpoint-down(md) {
+  .sidebar {
+    order: 1;
+  }
+}
 /**
 * Social Icons in Links
 **/

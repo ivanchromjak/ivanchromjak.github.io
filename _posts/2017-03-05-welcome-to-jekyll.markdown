@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting Up Jekyll Site on Github"
 date:   2017-03-05 16:19:59 +0100
-categories: jekyll update
+categories: git
 ---
 This is a post excerpt to test this functionality during development phase so you can stop reading this now.
 
