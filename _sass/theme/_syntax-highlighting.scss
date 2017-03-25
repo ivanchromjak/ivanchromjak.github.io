@@ -3,11 +3,13 @@
  */
   .highlighter-rouge, .highlight {
    color: #4271ae;
+   margin-bottom: 2rem;
  }
  .highlighter-rouge > pre, .highlight > pre {
-     padding: 2em;
+     padding: 1.6em;
      line-height: 1.42857143;
      background-color: $gray-lightest;
+     font-size: 85%;
  }
  .highlight {
    .hll { background-color: #d6d6d6 }
