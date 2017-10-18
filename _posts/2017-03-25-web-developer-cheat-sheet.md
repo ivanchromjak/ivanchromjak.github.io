@@ -146,6 +146,7 @@ Configure local git user
 git config --list
 git config --global user.name "Ivan Chromjak"
 git config --global user.email ivan@company.com
+git remote set-url origin https://github.com/username/repository.git
 ```
 
 Tags/Releases
