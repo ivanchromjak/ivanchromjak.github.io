@@ -135,56 +135,6 @@ a {
 }
 
 /**
-* Masonry Grid
-**/
-.grid-item {
-  float: left;
-}
-.grid-item img {
-  display: block;
-  max-width: 100%;
-  -webkit-box-shadow: 0px 0px 15px 1px rgba(142,154,163,0.2);
-  -moz-box-shadow: 0px 0px 15px 1px rgba(142,154,163,0.2);
-  box-shadow: 0px 0px 15px 1px rgba(142,154,163,0.2);
-}
-.grid-sizer,
-.grid-item {
-  width: 100%;
-}
-.grid-col-2 {
-  .grid-item {
-    margin-bottom: 80px;
-  }
-}
-.grid-col-3 {
-  .grid-item {
-    margin-bottom: 30px;
-  }
-}
-@include media-breakpoint-up(md) {
-  .grid-col-3 {
-    .grid-sizer,
-    .grid-item {
-      width: calc(50% - 15px);
-    }
-  }
-}
-@include media-breakpoint-up(lg) {
-  .grid-col-2 {
-    .grid-sizer,
-    .grid-item {
-      width: calc(50% - 40px);
-    }
-  }
-  .grid-col-3 {
-    .grid-sizer,
-    .grid-item {
-      width: calc(33.333% - 20px);
-    }
-  }
-}
-
-/**
 * Home Page
 **/
 .post-list {

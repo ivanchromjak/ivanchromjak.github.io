@@ -2,7 +2,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <link rel="shortcut icon" type="image/png" href="{{ "assets/img/favicon.png" | relative_url }}" >
@@ -11,60 +10,9 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <script src="{{ site.url }}/assets/js/main.min.js"></script>
-  {% if site.instagram_accesstoken %}
-    {% assign url = '{{image}}' %}
-    {% assign go_to = '{{link}}' %}
-    <script>
-      $(function(){
-        if($('#instafeed').length > 0){
-          var feed = new Instafeed({
-            get: 'user',
-            userId: '1045245980',
-            accessToken: '{{ site.instagram_accesstoken }}',
-            filter: function(image) {
-              return image.tags.indexOf('dev') >= 0;
-            },
-            limit: 30,
-            resolution: 'standard_resolution',
-            template: '<div class="grid-item"><a href="{{go_to}}"><img class="img-fluid" data-source="{{url}}" /></a></div>',
-            after: function() {
-
-              jQuery('#instafeed img').each(function(key,element) { jQuery(element).attr('src', jQuery(element).attr('data-source').replace("/s640x640/","/")); });
-
-              // init Masonry
-              var $grid = $('.instagram.grid').masonry({
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                columnWidth: '.grid-sizer',
-                gutter: 30
-              });
-              // layout Isotope after each image loads
-              $grid.imagesLoaded().progress( function() {
-                $grid.masonry();
-              });
-            }
-          });
-          feed.run();
-        }
-      });
-    </script>
-  {% endif %}
-
-  <script>
-    $(function(){
-      // init Masonry
-      var $grid = $('.portfolio.grid').masonry({
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        columnWidth: '.grid-sizer',
-        gutter: 80
-      });
-      // layout Isotope after each image loads
-      $grid.imagesLoaded().progress( function() {
-        $grid.masonry();
-      });
-    });
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.runtime.min.js"></script>
+  <link href="/instashow/jquery.instashow.min.css" rel="stylesheet">
+  <script src="/instashow/jquery.instashow.min.js"></script>
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}

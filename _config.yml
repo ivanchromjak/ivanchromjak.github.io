@@ -16,7 +16,7 @@
 title: Ivan Chromjak - Full Stack Web Developer
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Ivan Chromjak, a full stack web developer and designer, passionate about making beautiful and useful things on the web since 2002 and the author of this blog.
+  Hi, I'm Ivan Chromjak, a full stack web developer, passionate about making beautiful and useful things on the web since 2002 and the author of this blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:title/
 url: "https://ivanchromjak.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -33,7 +33,7 @@ social:
 
 twitter_username: ichromjak
 github_username:  ivanchromjak
-# instagram_accesstoken: 1045245980.ba4c844.e4e85ffbd253421ebf463634a9245454
+instagram_accesstoken: 1045245980.ba4c844.e4e85ffbd253421ebf463634a9245454
 # google_analytics:
 footer_text: Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.
 # paginate: 2
