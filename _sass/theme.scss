@@ -172,13 +172,13 @@ a {
 * About Page
 **/
 .container-instagram {
-  width: 1360px;
+  width: 1320px;
   max-width: 100%;
   position: relative;
-  margin-top: -60px;
+  margin-top: -50px;
   margin-left: auto;
   margin-right: auto;
   @include media-breakpoint-up(md) {
-    margin-top: -80px;
+    margin-top: -70px;
   }
 }
