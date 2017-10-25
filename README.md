@@ -1,3 +1,18 @@
+```
+git clone ???
+
+bundle install
+
+npm install
+
+jekyll s
+
+jekyll s --livereload
+
+bundle exec jekyll s --livereload
+
+```
+
 # minima
 
 *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
@@ -21,7 +36,7 @@ theme: minima
 And then execute:
 
     $ bundle
-    
+
 
 ## Usage
 

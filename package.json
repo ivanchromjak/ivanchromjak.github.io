@@ -1,37 +1,27 @@
 {
-  "name": "ivan",
+  "name": "jekyll-uikit",
   "version": "1.0.0",
-  "description": "Jekyll bloging theme",
-  "main": "index.html",
+  "description": "*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "copy": "ncp node_modules/bootstrap/scss _sass/bootstrap/ & ncp node_modules/bootstrap/dist/js/bootstrap.js assets/js/bootstrap.js & ncp node_modules/jquery/dist/jquery.js assets/js/jquery.js",
-    "lint": "jshint assets/js/main.js",
-    "uglify": "uglifyjs node_modules/jquery/dist/jquery.js assets/js/main.js -m -c -o assets/js/main.min.js",
-    "watch": "watch 'npm run build' assets/js/main.js",
-    "build": "npm run lint && npm run uglify",
+    "copy": "ncp node_modules/uikit/src/scss/ _sass/uikit/ & ncp node_modules/uikit/dist/js/uikit.min.js assets/js/uikit.min.js & ncp node_modules/uikit/dist/js/uikit-icons.min.js assets/js/uikit-icons.min.js",
     "postinstall": "npm run copy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chromjak/chromjak.github.io.git"
+    "url": "git+https://github.com/ivanchromjak/jekyll-uikit.git"
   },
-  "keywords": [
-    "jekyll"
-  ],
-  "author": "Ivan Chromjak",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chromjak/chromjak.github.io/issues"
+    "url": "https://github.com/ivanchromjak/jekyll-uikit/issues"
   },
-  "homepage": "https://github.com/chromjak/chromjak.github.io#readme",
-  "devDependencies": {
-    "jshint": "latest",
-    "ncp": "latest",
-    "uglify-js": "latest",
-    "watch": "latest"
-  },
+  "homepage": "https://github.com/ivanchromjak/jekyll-uikit#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
-  }
+    "uikit": "^3.0.0-beta.31"
+    },
+    "devDependencies": {
+      "ncp": "latest"
+    }
 }

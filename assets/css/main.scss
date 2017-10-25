@@ -1,11 +1,24 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
+
+// 1. Your custom variables and variable overwrites.
+//$global-link-color: #DA7D02;
+$global-secondary-background: #020202;
+
+// 2. Import default variables and available mixins.
+@import "uikit/variables-theme";
+@import "uikit/mixins-theme";
+
+// 3. Your custom mixin overwrites.
+//@mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "uikit/uikit-theme";
 
 
-// Theme
-@import "theme/_bootstrap-variables";
-@import "bootstrap/bootstrap";
-@import "theme/_syntax-highlighting";
-@import "theme";
+.uk-logo {
+    img {
+        max-width: 70px;
+    }
+}
