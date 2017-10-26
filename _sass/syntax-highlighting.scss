@@ -1,7 +1,7 @@
 /**
  * Syntax highlighting styles
  */
-$gray-lightest: #f7f7f9;
+
 
 .highlight,
 .highlighter-rouge {
@@ -11,11 +11,15 @@ $gray-lightest: #f7f7f9;
 
 .highlight > pre,
 .highlighter-rouge > pre {
-    padding: 1.6em;
-    line-height: 1.42857143;
-    background-color: $gray-lightest;
-    font-size: 63%;
-    border: none;
+    font-family: 'Roboto Mono',monospace;
+    color: #666;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    overflow: auto;
+    padding: 25px;
+    border: 0 solid #e5e5e5;
+    border-radius: 0;
+    background: #f8f8f8;
 }
 
 .highlight {
