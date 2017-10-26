@@ -12,8 +12,11 @@ $global-link-hover-color: #f0506e;
 // $global-danger-background: #f0506e !default;
 
 
-$base-body-font-family: 'Nunito Sans', sans-serif;
+
+$base-body-font-family: 'Lora', serif;
 $base-heading-font-family: 'Nunito Sans', sans-serif;
+$navbar-nav-item-font-family: 'Nunito Sans', sans-serif;
+$logo-font-family: 'Quicksand', sans-serif;
 
 $base-heading-font-weight: 700;
 
@@ -25,11 +28,13 @@ $heading-hero-font-size-m:                       13rem;
 $heading-hero-line-height-m:                     0.88;
 
 
-$global-xxlarge-font-size: 8rem; // h1
-$global-xlarge-font-size: 5.6rem; // h2
-$global-large-font-size: 3rem; // h3
-$global-medium-font-size: 2.1rem; // h4
-$base-body-color: #000;
+$base-h1-font-size: 8rem; // h1
+$base-h2-font-size: 5.6rem; // h2
+$base-h3-font-size: 4.2rem; // h3
+$base-h4-font-size: 3rem; // h4
+$base-h5-font-size: 2.1rem;
+//$base-body-color: #000;
+
 //$base-h1-font-size: $global-xxlarge-font-size !default;
 //$base-h1-line-height: 1.2 !default;
 //$global-xlarge-font-size: 2rem !default;
@@ -38,14 +43,23 @@ $base-body-color: #000;
 //$global-large-font-size: 1.5rem !default;
 //$base-h3-font-size: $global-large-font-size !default;
 //$base-h3-line-height: 1.4 !default;
-//$base-h4-font-size: $global-medium-font-size !default;
+//$base-h4-font-size: $base-h4-font-size !default;
 //$base-h4-line-height: 1.4 !default;
 //$base-h5-font-size: $global-font-size !default;
 //$base-h5-line-height: 1.4 !default;
 //$base-h6-font-size: $global-small-font-size !default;
 //$base-h6-line-height: 1.4 !default;
 
-
+// Article
+// $article-margin-top: $global-large-margin !default;
+// $global-xxlarge-font-size: 2.625rem !default;
+$article-title-font-size: $base-h4-font-size;
+// $article-title-line-height: 1.2 !default;
+// $global-small-font-size: 0.875rem !default;
+// $article-meta-font-size: $global-small-font-size !default;
+// $article-meta-line-height: 1.4 !default;
+// $global-muted-color: #999 !default;
+// $article-meta-color: $global-muted-color !default;
 
 //$global-large-gutter: 90px;
 $navbar-nav-item-height: 100px;
@@ -82,8 +96,6 @@ $text-danger-color:
 }
 
 .uk-logo {
-
-    font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 28px;
     letter-spacing: 2px;
@@ -96,9 +108,11 @@ $text-danger-color:
 
 .uk-navbar-nav li a {
     letter-spacing: 2px;
+    font-weight: 700;
 }
 .tm-text-xlarge {
-    font-size: $global-medium-font-size;
+    font-family: $base-heading-font-family;
+    font-size: $base-h5-font-size;
     font-weight: 700;
     letter-spacing: -1px;
     color: $global-inverse-color;
@@ -109,7 +123,7 @@ $text-danger-color:
 }
 @media (min-width: $breakpoint-small) {
     .tm-text-xlarge {
-        font-size: $global-large-font-size;
+        font-size: $base-h4-font-size;
     }
 }
 .tm-heading-hero-l {
@@ -141,7 +155,6 @@ footer {
 }
 .uk-article {
     font-size: 1.6rem;
-    font-weight: 300;
     h2 {
         font-weight: 800;
     }
