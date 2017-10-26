@@ -19,7 +19,7 @@ $navbar-nav-item-font-family: 'Nunito Sans', sans-serif;
 $logo-font-family: 'Quicksand', sans-serif;
 
 $base-heading-font-weight: 700;
-
+$base-heading-color: $global-secondary-background;
 $heading-hero-font-size:                         5rem;
 $heading-hero-font-size-s:                       8rem;
 $heading-hero-font-size-m:                       13rem;
@@ -33,6 +33,7 @@ $base-h2-font-size: 5.6rem; // h2
 $base-h3-font-size: 4.2rem; // h3
 $base-h4-font-size: 3rem; // h4
 $base-h5-font-size: 2.1rem;
+
 //$base-body-color: #000;
 
 //$base-h1-font-size: $global-xxlarge-font-size !default;
@@ -53,8 +54,8 @@ $base-h5-font-size: 2.1rem;
 // Article
 // $article-margin-top: $global-large-margin !default;
 // $global-xxlarge-font-size: 2.625rem !default;
-$article-title-font-size: $base-h4-font-size;
-// $article-title-line-height: 1.2 !default;
+//$article-title-font-size: ;
+$article-title-line-height: 1.1;
 // $global-small-font-size: 0.875rem !default;
 // $article-meta-font-size: $global-small-font-size !default;
 // $article-meta-line-height: 1.4 !default;
@@ -155,7 +156,23 @@ footer {
 }
 .uk-article {
     font-size: 1.6rem;
-    h2 {
+    h1, h2 {
         font-weight: 800;
+    }
+    h2 {
+        font-size: $base-h4-font-size;
+    }
+    .uk-article-title a:hover {
+        color: $global-secondary-background;
+        text-decoration: none;
+    }
+}
+@media (min-width: $breakpoint-medium) {
+    .uk-article h1.uk-article-title {
+        font-size: 6.6rem;
+        margin-bottom: $margin-xlarge-margin;
+    }
+    .uk-article h2.uk-article-title {
+        font-size: 3.8rem;
     }
 }

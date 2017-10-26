@@ -169,7 +169,7 @@ Install Gulp Globally
 sudo npm install gulp-cli -g
 ```
 
-# Bower
+## Bower
 
 Change package directory
 ```shell
