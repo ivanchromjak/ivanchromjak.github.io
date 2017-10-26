@@ -2,35 +2,21 @@
 layout: default
 ---
 
-<div class="home">
-
-  <header class="post-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-4">
-          <h1 class="page-heading title-1 m-0 pb-5 pb-lg-7">Blog</h1>
-          <div>{{ content }}</div>
+<div class="uk-section uk-section-secondary">
+    <div class="uk-container">
+        <div>
+            <h1 class="uk-heading-hero tm-heading-hero-l uk-margin-xlarge-bottom-">{{ page.title | escape }} {% if page.subtitle %}<span>{{ page.subtitle | escape }}</span>{% endif %}</h1>
         </div>
-      </div>
     </div>
-  </header>
+</div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7 offset-lg-1">
-        <div class="post-list">
-          {% for post in site.posts %}
-            <div class="entry mb-5 mb-lg-6">
-              <h2 class="title-2 mb-3"><a class="post-link link-inverted" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-              {{ post.excerpt }}
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="col-lg-3 flex-lg-first">
-        {% include author.html %}
-      </div>
+<div class="uk-section">
+    <div class="uk-container">
+        {% for post in site.posts %}
+          <article class="uk-article">
+            <h2 class=""><a class="" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+            {{ post.excerpt }}
+          </article>
+        {% endfor %}
     </div>
-  </div>
-
 </div>

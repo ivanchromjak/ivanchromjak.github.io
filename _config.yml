@@ -33,9 +33,10 @@ social:
 
 twitter_username: ivanchromjak
 github_username:  ivanchromjak
+linkedin_username: ivanchromjak
 instagram_accesstoken: 1045245980.1677ed0.2ef79610de334c6a96f136ed85caacea
 # google_analytics:
-footer_text: Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.
+footer_text: Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
 # paginate: 2
 
 # Build settings
@@ -51,6 +52,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  
+
 sass:
   style: compressed

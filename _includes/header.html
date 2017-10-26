@@ -3,25 +3,15 @@
         <div class="uk-container">
             <div uk-navbar>
                 <div class="uk-navbar-left">
-
-                    <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url}}"><img class="" src="/assets/img/logo.svg"></a>
-
-                    <ul class="uk-navbar-nav">
-                        {% for link in site.data.navigation %}
-                          {% if link.url contains 'http' %}
-                              {% assign domain = '' %}
-                              {% else %}
-                              {% assign domain = site.url %}
-                          {% endif %}
-                          <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-
+                    <a class="uk-navbar-item uk-logo font-smoothing" href="{{ "/" | relative_url }}"><span>//</span> IVAN</a>
                 </div>
                 <div class="uk-navbar-right">
-                    <a class="uk-navbar-toggle" href="#modal" uk-icon="icon: more-vertical" uk-toggle></a>
-                    <a class="uk-navbar-toggle" href="#modal-search" uk-search-icon uk-toggle></a>
-                    <a class="uk-navbar-toggle" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        {% for link in site.data.navigation %} {% if link.url contains 'http' %} {% assign domain = '' %} {% else %} {% assign domain = site.url %} {% endif %}
+                        <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
                 </div>
             </div>
         </div>

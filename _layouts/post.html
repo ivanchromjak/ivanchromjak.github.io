@@ -1,34 +1,29 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header mb-5 mb-lg-6">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-4">
-          <h1 class="title-1 m-0" itemprop="name headline">{{ page.title | escape }}</h1>
+    <div class="uk-section uk-section-secondary">
+        <div class="uk-container">
+            <div>
+                <h1 class="uk-heading-hero tm-heading-hero-l uk-margin-xlarge-bottom-">{{ page.title | escape }} {% if page.subtitle %}<span>{{ page.subtitle | escape }}</span>{% endif %}</h1>
+                <!--
+                <p class="uk-article-meta">{% include author.html %}</p>
+            -->
+            </div>
         </div>
-      </div>
     </div>
-  </header>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 sidebar">
-        {% include author.html %}
-      </div>
-      <div class="col-lg-7 offset-lg-1">
-        <div class="post-content" itemprop="articleBody">
-          {{ content }}
-          {% include share.html %}
+    <div class="uk-section">
+        <div class="uk-container uk-container-small">
+            <div>
+              {{ content }}
+              {% include share.html %}
+            </div>
+            {% if site.disqus.shortname %}
+              {% include disqus_comments.html %}
+            {% endif %}
         </div>
-      </div>
     </div>
-  </div>
-
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
 
 </article>
