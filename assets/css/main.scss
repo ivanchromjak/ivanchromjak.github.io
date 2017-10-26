@@ -30,8 +30,8 @@ $heading-hero-line-height-m:                     0.88;
 
 $base-h1-font-size: 8rem; // h1
 $base-h2-font-size: 5.6rem; // h2
-$base-h3-font-size: 4.2rem; // h3
-$base-h4-font-size: 3rem; // h4
+$base-h3-font-size: 4rem; // h3
+$base-h4-font-size: 2.6rem; // h4
 $base-h5-font-size: 2.1rem;
 
 //$base-body-color: #000;
@@ -160,7 +160,7 @@ footer {
         font-weight: 800;
     }
     h2 {
-        font-size: $base-h4-font-size;
+        font-size: $base-h3-font-size;
     }
     .uk-article-title a:hover {
         color: $global-secondary-background;
