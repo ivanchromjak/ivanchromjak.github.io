@@ -167,6 +167,10 @@ footer {
         color: $global-secondary-background;
         text-decoration: none;
     }
+    img {
+        margin-top: $margin-medium-margin;
+        margin-bottom: $margin-medium-margin;
+    }
 }
 @media (min-width: $breakpoint-medium) {
     .uk-article h1.uk-article-title {
