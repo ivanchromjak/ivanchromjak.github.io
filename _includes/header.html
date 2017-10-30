@@ -7,8 +7,20 @@
                 </div>
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav uk-visible@m">
-                        {% for link in site.data.navigation %} {% if link.url contains 'http' %} {% assign domain = '' %} {% else %} {% assign domain = site.url %} {% endif %}
-                        <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                        {% for link in site.data.navigation %}
+                            {% if link.url contains 'http' %}
+                                {% assign domain = '' %}
+                            {% else %}
+                                {% assign domain = relative_url %}
+                            {% endif %}
+                            {% if link.url == page.url %}
+                                {% assign current = ' class="uk-active"' %}
+                            {% else %}
+                                {% assign current = null %}
+                            {% endif %}
+                            {% if link.title %}
+                                <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                     <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" uk-navbar-toggle-icon uk-toggle></a>
