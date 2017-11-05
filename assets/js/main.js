@@ -1,3 +1,5 @@
-/***************************************************
-      As the page loads, cal these scripts
-***************************************************/
+---
+---
+
+{% include_relative uikit.min.js %}
+{% include_relative uikit-icons.min.js %}
