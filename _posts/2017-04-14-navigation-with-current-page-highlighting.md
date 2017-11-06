@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [Development, Jekyll]
-tags: [dev, jekyll, ssl]
+tags: [dev, jekyll, nav]
 ---
 
 Add navigation links to a data file in `_data/navigation.yml`:
