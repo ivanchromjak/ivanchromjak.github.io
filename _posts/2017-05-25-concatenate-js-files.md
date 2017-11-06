@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Concatenate JS Files
 categories: [Development, Jekyll]
 tags: [dev, jekyll, js]
 ---
