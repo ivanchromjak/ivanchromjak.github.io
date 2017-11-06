@@ -37,7 +37,9 @@ linkedin_username: ivanchromjak
 
 # google_analytics:
 footer_text: Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
-# paginate: 2
+
+paginate: 10
+paginate_path: "/blog/:num/"
 
 # Build settings
 markdown: kramdown
