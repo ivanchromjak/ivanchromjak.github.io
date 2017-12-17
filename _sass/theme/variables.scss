@@ -1,34 +1,52 @@
+
+
+$container-max-width: 1000px;
+
+
+//$navbar-background: #fff;
+
+
+
 // 1. Your custom variables and variable overwrites.
 //$global-link-color: #DA7D02;
-$global-secondary-background: #020202;
-$global-link-color: #f0506e;
-$global-link-hover-color: #f0506e;
+$global-secondary-background: #141415;
+$global-link-color: #ffd012;
+$global-link-hover-color: #ffd012;
 // $global-success-background: #32d296 !default;
 // $global-warning-background: #faa05a !default;
 // $global-danger-background: #f0506e !default;
 $base-code-font-size: 16px;
 
 
-$base-body-font-family: 'Lora', serif;
-$base-heading-font-family: 'Nunito Sans', sans-serif;
-$navbar-nav-item-font-family: 'Nunito Sans', sans-serif;
+$base-body-font-family: system-ui;
+$base-heading-font-family: "Geomanist", Helvetica, Arial, sans-serif;
+//$navbar-nav-item-font-family: 'Nunito Sans', sans-serif;
 $logo-font-family: 'Quicksand', sans-serif;
 
-$base-heading-font-weight: 700;
+$base-heading-font-weight: 600;
 $base-heading-color: $global-secondary-background;
-$heading-hero-font-size:                         5rem;
-$heading-hero-font-size-s:                       8rem;
-$heading-hero-font-size-m:                       13rem;
+$heading-hero-font-size:                         3rem;
+$heading-hero-font-size-s:                       4rem;
+$heading-hero-font-size-m:                       5.6rem;
+
+$heading-hero-font-size-2:                         3rem;
+$heading-hero-font-size-2-s:                       4.25rem;
+$heading-hero-font-size-2-m:                       5.4rem;
+
+$home-text-font-size: 2rem;
+$home-text-font-size-s: 2.75rem;
+$home-text-font-size-m: 3.75rem;
+
 //$heading-hero-line-height:                       1.1;
 //$heading-hero-line-height-s:                     1;
 $heading-hero-line-height-m:                     0.88;
 
 
-$base-h1-font-size: 8rem; // h1
-$base-h2-font-size: 5.6rem; // h2
-$base-h3-font-size: 4rem; // h3
-$base-h4-font-size: 2.6rem; // h4
-$base-h5-font-size: 2.1rem;
+// $base-h1-font-size: 8rem; // h1
+// $base-h2-font-size: 5.6rem; // h2
+// $base-h3-font-size: 4rem; // h3
+// $base-h4-font-size: 2.5rem; // h4
+// $base-h5-font-size: 2.1rem;
 
 //$base-body-color: #000;
 
@@ -62,7 +80,16 @@ $article-title-line-height: 1.1;
 $navbar-nav-item-height: 100px;
 $inverse-navbar-nav-item-color: rgba(255, 255, 255, 0.6);
 
-//$inverse-global-muted-color:                     rgba($global-inverse-color, 0.9);
+$inverse-global-muted-color:                     #fff;
+//$inverse-global-inverse-color:                    #fff;
+
+$inverse-global-color: #fff;
+// $inverse-base-color: $inverse-global-color !default;
+// $inverse-global-emphasis-color: $global-inverse-color !default;
+// $inverse-base-link-color: $inverse-global-emphasis-color !default;
+// $inverse-base-link-hover-color: $inverse-global-emphasis-color !default;
+
+
 /*
 $text-muted-color:                               $global-muted-color !default;
 $text-primary-color:                             $global-primary-background !default;

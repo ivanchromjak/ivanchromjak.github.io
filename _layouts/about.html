@@ -1,24 +1,90 @@
 ---
-layout: default
+layout: default-full
 ---
 
-<div class="uk-section uk-section-secondary">
-    <div class="uk-container">
-        <div>
-            <h1 class="uk-heading-hero tm-heading-hero-l uk-margin-xlarge-bottom-">{{ page.title | escape }} {% if page.subtitle %}<span>{{ page.subtitle | escape }}</span>{% endif %}</h1>
-        </div>
-    </div>
-</div>
+<!--
+<div class="uk-background-fixed uk-background-contain uk-background-top-right uk-background-norepeat background-home uk-background-blend-overlay" style="background-image: url(../assets/img/ivan_bg.png);"></div>
+uk-scrollspy="cls: uk-animation-fade uk-animation-reverse; repeat: true"
+-->
 
-<div class="tm-section-about uk-section-secondary">
+
+
+
+<div class="background-home-wrapper uk-position-relative uk-background-fixed uk-background-contain uk-background-top-right uk-background-norepeat uk-background-image@m" style="background-image: url(../assets/img/ivan_bg.png);">
+  <div id="bg" class="uk-position-cover background-home"></div>
+
+  <div class="tm-section-about">
     <div class="uk-container">
-        <div class="uk-grid-collapse" uk-grid>
-            <div class="uk-width-expand@m tm-text-xlarge">{{ content }}</div>
-            <div class="uk-width-1-2@m uk-background-contain tm-author-img" style="background-image: url(../assets/img/ivan_bg.png);"></div>
+      <div class="uk-grid-collapse" data-uk-grid>
+        <div class="uk-width-1-1 uk-width-3-4@m">
+          <h1 class="uk-heading-hero uk-margin-xlarge-top">{{ page.title | escape }} {% if page.subtitle %}<span>{{ page.subtitle | escape }}</span>{% endif %}</h1>
         </div>
-        <hr class="uk-margin-large-top uk-margin-large-bottom">
-        <h2 class="uk-margin-large-top uk-margin-large-bottom uk-text-center">Envato Recognition</h2>
-        <img class="uk-margin-small-top img-fluid" src="/assets/img/recognition.png">
-        <hr class="uk-margin-large-top">
+        <div class="uk-width-1-1 uk-width-3-4@m text-xlarge uk-margin-xlarge-top">{{ content }}</div>
+      </div>
+    </div>
+  </div>
+<!--
+<a id="fade" data-uk-scrollspy="repeat: true"></a>
+<div id="recognition" class="tm-section-about uk-background-secondary uk-margin-xlarge-top">
+    <div class="uk-container">
+
+        <h2 class="heading-hero-2 uk-margin-large-bottom">Envato Recognition</h2>
+        <div class="uk-grid-large uk-grid-divider uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center recognition" data-uk-grid>
+            <div>
+              <h4>Elite</h4>
+              <h5>Author</h5>
+              <img class="uk-margin-top" src="{{ "/assets/img/elite.svg" | absolute_url }}" alt="Elite Envato Author">
+            </div>
+            <div>
+              <h4>12000</h4>
+              <h5>Customers</h5>
+              <img class="uk-margin-top" src="{{ "/assets/img/top-seller.svg" | absolute_url }}" alt="12000 Customers">
+            </div>
+            <div>
+              <h4>Featured</h4>
+              <h5>Products</h5>
+              <img class="uk-margin-top" src="{{ "/assets/img/featured.svg" | absolute_url }}" alt="Featured Author">
+            </div>
+            <div>
+              <h4>Trend</h4>
+              <h5>Setter</h5>
+              <img class="uk-margin-top" src="{{ "/assets/img/trending.svg" | absolute_url }}" alt="Trend Setter">
+            </div>
+        </div>
+
+      </div>
     </div>
 </div>
+-->
+
+<!-- <script>
+UIkit.util.on('#fade', 'inview', function () {
+  var bg = document.getElementById('bg');
+
+  // bg.classList.remove('background-home');
+  // bg.classList.remove('uk-background-blend-overlay');
+  bg.classList.add('background-home-fade');
+  // bg.classList.add('uk-background-blend-color');
+  // bg.classList.add('uk-animation-fade');
+  //bg.classList.add('uk-animation-reverse');
+
+});
+
+UIkit.util.on('#fade', 'outview', function () {
+  var bg = document.getElementById('bg');
+
+  //bg.classList.remove('uk-animation-reverse');
+  bg.classList.remove('background-home-fade');
+  // bg.classList.remove('uk-background-blend-color');
+  // bg.classList.remove('uk-animation-fade');
+  // bg.classList.add('background-home');
+  // bg.classList.add('uk-background-blend-overlay');
+
+});
+
+UIkit.scrollspy('#recognition', {
+  cls: "uk-animation-slide-bottom",
+  repeat: true,
+  delay: 100,
+});
+</script> -->

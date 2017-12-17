@@ -1,0 +1,23 @@
+<footer class="uk-margin-large-top text-xlarge">
+    <div class="uk-container">
+
+      <div class="uk-grid-collapse" data-uk-grid>
+        <div class="uk-width-1-1 uk-width-3-4@m">
+
+                {% if site.github_username %}
+                    <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://github.com/{{ site.github_username | escape }}">GitHub</a></p>
+                {% endif %}
+                {% if site.twitter_username %}
+                    <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://twitter.com/{{ site.twitter_username | escape }}">Twitter</a></p>
+                {% endif %}
+                {% if site.linkedin_username %}
+                    <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username | escape }}">LinkedIn</a></p>
+                {% endif %}
+        <!--
+        <div class="uk-margin-medium tm-text-xsmall uk-text-meta uk-text-muted uk-link-muted">{{ site.footer_text }}</div>
+        -->
+      </div>
+    </div>
+
+    </div>
+</footer>
