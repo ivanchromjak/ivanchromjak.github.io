@@ -3,15 +3,15 @@
 
   {% include head.html %}
 
-  <body class="font-smoothing">
+  <body>
 
     {% include header.html %}
 
     {{ content }}
 
-    {% include offcanvas.html %}
-
-    {% include footer.html %}
+    {% if page.layout != 'home' %}
+      {% include footer.html %}
+    {% endif %}
 
   </body>
 

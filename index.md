@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: home
 title: Hello, I am Ivan
 permalink: /
 ---

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="uk-background-secondary uk-light background-home-wrapper uk-position-relative uk-background-fixed uk-background-contain uk-background-top-right uk-background-norepeat uk-background-image@m" style="background-image: url(../assets/img/ivan_bg.png);">
+
+  <div id="bg" class="uk-position-cover background-home"></div>
+
+  <div class="uk-container">
+
+      <div class="uk-width-1-1 uk-width-3-4@m">
+        <h1 class="uk-heading-hero uk-margin-xlarge-top">{{ page.title | escape }} {% if page.subtitle %}<span>{{ page.subtitle | escape }}</span>{% endif %}</h1>
+      </div>
+
+      <div class="uk-width-1-1 uk-width-3-4@m text-xlarge uk-margin-xlarge-top about">{{ content }}</div>
+
+      <div class="uk-width-1-1 uk-width-3-4@m text-xlarge footer-home">
+        {% if site.github_username %}
+          <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://github.com/{{ site.github_username | escape }}">GitHub</a></p>
+        {% endif %}
+        {% if site.twitter_username %}
+          <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://twitter.com/{{ site.twitter_username | escape }}">Twitter</a></p>
+        {% endif %}
+        {% if site.linkedin_username %}
+          <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username | escape }}">LinkedIn</a></p>
+        {% endif %}
+      </div>
+
+  </div>
+
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: development
+categories: [Development, WordPress]
 ---
 This cheat sheet saves me from learning by heart commands for all the different tools and task runners used in web development.
 

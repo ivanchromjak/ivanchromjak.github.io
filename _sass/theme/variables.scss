@@ -1,7 +1,7 @@
 
 
 $container-max-width: 1000px;
-
+$container-small-max-width: 700px;
 
 //$navbar-background: #fff;
 
@@ -12,14 +12,17 @@ $container-max-width: 1000px;
 $global-secondary-background: #141415;
 $global-link-color: #ffd012;
 $global-link-hover-color: #ffd012;
+
+$global-muted-color: #6f6f73;
 // $global-success-background: #32d296 !default;
 // $global-warning-background: #faa05a !default;
 // $global-danger-background: #f0506e !default;
 $base-code-font-size: 16px;
 
+$global-color: $global-secondary-background;
 
 $base-body-font-family: system-ui;
-$base-heading-font-family: "Geomanist", Helvetica, Arial, sans-serif;
+$base-heading-font-family: "Geomanist", system-ui;
 //$navbar-nav-item-font-family: 'Nunito Sans', sans-serif;
 $logo-font-family: 'Quicksand', sans-serif;
 
@@ -69,7 +72,7 @@ $text-large-font-size: 1.4rem;
 // $article-margin-top: $global-large-margin !default;
 // $global-xxlarge-font-size: 2.625rem !default;
 //$article-title-font-size: ;
-$article-title-line-height: 1.1;
+//$article-title-line-height: 1.1;
 // $global-small-font-size: 0.875rem !default;
 // $article-meta-font-size: $global-small-font-size !default;
 // $article-meta-line-height: 1.4 !default;
@@ -78,7 +81,28 @@ $article-title-line-height: 1.1;
 
 //$global-large-gutter: 90px;
 $navbar-nav-item-height: 100px;
-$inverse-navbar-nav-item-color: rgba(255, 255, 255, 0.6);
+$inverse-navbar-nav-item-color: $global-secondary-background;
+
+// $navbar-background: #fff;
+$navbar-nav-item-color: $global-secondary-background;
+$navbar-nav-item-hover-color: $global-muted-color;
+$navbar-nav-item-active-color: $global-muted-color;
+$navbar-toggle-color: $global-secondary-background;
+$navbar-toggle-hover-color: $global-muted-color;
+$icon-link-color: $global-secondary-background;
+$icon-link-hover-color: $global-muted-color;
+
+// $inverse-icon-link-color: $inverse-global-muted-color !default;
+// $inverse-icon-link-hover-color: $inverse-global-color !default;
+// $inverse-icon-link-active-color: $inverse-global-color !default;
+// $inverse-icon-button-background: $inverse-global-muted-background !default;
+// $inverse-icon-button-color: $inverse-global-muted-color !default;
+// $inverse-icon-button-hover-background: darken($inverse-icon-button-background, 5%) !default;
+// $inverse-icon-button-hover-color: $inverse-global-color !default;
+// $inverse-icon-button-active-background: darken($inverse-icon-button-background, 10%) !default;
+// $inverse-icon-button-active-color: $inverse-global-color !default;
+
+
 
 $inverse-global-muted-color:                     #fff;
 //$inverse-global-inverse-color:                    #fff;

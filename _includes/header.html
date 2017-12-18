@@ -1,15 +1,15 @@
 <header data-uk-sticky="sel-target: .navbar; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed">
-  <div class="navbar uk-background-default">
+  <div class="navbar uk-background-{% if page.layout == 'home' %}secondary uk-light{% else %}default{% endif %}">
     <nav>
       <div class="uk-container">
           <div data-uk-navbar>
-              <div class="uk-navbar-left">
+              <div class="nav-overlay uk-navbar-left">
 
                   <a class="uk-logo font-smoothing" href="{{ "/" | relative_url }}"><span>//</span> IVAN</a>
 
               </div>
-              <div class="uk-navbar-right">
-                  <ul class="uk-navbar-nav uk-visible@m">
+              <div class="nav-overlay uk-navbar-right">
+                  <ul class="uk-navbar-nav">
                     {% for link in site.data.navigation %}
                         {% if link.url contains 'http' %}
                             {% assign domain = '' %}
@@ -27,30 +27,24 @@
                     {% endfor %}
                   </ul>
 
-                  {% unless page.hero%}
-                  <div>
-                      <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
-                      <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
-                          <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
-                              <input id="navbar-search" class="uk-search-input" type="search" placeholder="Search..." autofocus>
-                          </form>
-                          <ul id="navbar-search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
-                      </div>
-                  </div>
-                  <script>
-                  SimpleJekyllSearch({
-                      searchInput: document.getElementById('navbar-search'),
-                      resultsContainer: document.getElementById('navbar-search-results'),
-                      noResultsText: '<li>No results found</li>',
-                      searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                      json: '/search.json'
-                  });
-                  </script>
-                  {% endunless %}
+                  <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
 
-                  <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+                  <a href="/blog/" class="uk-icon-link" uk-icon="icon: table"></a>
 
               </div>
+
+              <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+
+                  <div class="uk-navbar-item uk-width-expand">
+                      <form class="uk-search uk-search-navbar uk-width-1-1">
+                          <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                      </form>
+                  </div>
+
+                  <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+              </div>
+
           </div>
       </div>
 
