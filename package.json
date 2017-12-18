@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "copy": "ncp node_modules/uikit/src/scss/ _sass/uikit/ & ncp node_modules/system-font-css/ _sass/system-font-css/ & ncp node_modules/uikit/dist/js/uikit.min.js assets/js/uikit.min.js & ncp node_modules/uikit/dist/js/uikit-icons.min.js assets/js/uikit-icons.min.js",
+    "copy": "ncp node_modules/uikit/src/scss/ _sass/uikit/ & ncp node_modules/system-font-css/ _sass/system-font-css/ & ncp node_modules/uikit/dist/js/uikit.min.js assets/js/uikit.min.js & ncp node_modules/uikit/dist/js/uikit-icons.min.js assets/js/uikit-icons.min.js & ncp node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js assets/js/simple-jekyll-search.min.js",
     "postinstall": "npm run copy"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ivanchromjak/jekyll-uikit#readme",
   "dependencies": {
+    "simple-jekyll-search": "^1.5.0",
     "system-font-css": "^2.0.1",
     "uikit": "^3.0.0-beta.31"
   },

@@ -1,0 +1,13 @@
+<div class="uk-container">
+  <ul id="search-results" class="uk-list uk-margin-remove-top uk-position-absolute"></ul>
+
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search'),
+      resultsContainer: document.getElementById('search-results'),
+      noResultsText: '<li><h4>No results found</h4></li>',
+      searchResultTemplate: '<li><h4><a href="{url}">{title}</a></h4></li>',
+      json: '/search.json'
+    });
+  </script>
+</div>

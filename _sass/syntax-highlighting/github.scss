@@ -4,15 +4,14 @@
 
 .highlight,
 .highlighter-rouge {
-    color: #4271ae;
-    margin-bottom: 2rem;
+    color: $base-code-color;
 }
 
 .highlight > pre,
 .highlighter-rouge > pre {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #444;
+    font-size: 13px;
+    line-height: 1.5rem;
+    color: $base-code-color;
     -moz-tab-size: 4;
     tab-size: 4;
     overflow: auto;

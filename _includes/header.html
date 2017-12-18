@@ -1,11 +1,11 @@
 <header data-uk-sticky="sel-target: .navbar; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed">
   <div class="navbar uk-background-{% if page.layout == 'home' %}secondary uk-light{% else %}default{% endif %}">
     <nav>
-      <div class="uk-container">
+      <div class="uk-container uk-position-relative">
           <div data-uk-navbar>
               <div class="nav-overlay uk-navbar-left">
 
-                  <a class="uk-logo font-smoothing" href="{{ "/" | relative_url }}"><span>//</span> IVAN</a>
+                  <a class="uk-logo" href="{{ "/" | relative_url }}"><span>//</span> IVAN</a>
 
               </div>
               <div class="nav-overlay uk-navbar-right">
@@ -36,8 +36,9 @@
               <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
 
                   <div class="uk-navbar-item uk-width-expand">
-                      <form class="uk-search uk-search-navbar uk-width-1-1">
-                          <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                      <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                          <input id="search" class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                          {% include search-results.html %}
                       </form>
                   </div>
 
@@ -46,6 +47,8 @@
               </div>
 
           </div>
+
+
       </div>
 
     </nav>

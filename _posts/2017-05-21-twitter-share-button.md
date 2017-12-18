@@ -9,7 +9,7 @@ Add Twitter share button to your Jekyll template.
 Set Twitter username in Jekyll config file `_config.yml`:
 
 ```yaml
-twitter_username: ivanchromjak
+author.twitter: ivanchromjak
 ```
 
 Create `_includes/share.html` file:
@@ -18,7 +18,7 @@ Create `_includes/share.html` file:
 ```liquid
 <div class="share">
   Share this on &rarr;
-  <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span> Twitter</a>
+  <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span> Twitter</a>
 </div>
 ```
 {% endraw %}

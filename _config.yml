@@ -13,15 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Ivan Chromjak - Full Stack Web Developer
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Ivan Chromjak, a full stack web developer and Envato Elite author,  making beautiful and useful things on the web since 2002 and the author of this blog.
+  Hi, I'm Ivan Chromjak, a full stack web developer and Envato Elite author, making beautiful and useful things on the web since 2002 and the author of this blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:title/
 url: "https://ivanchromjak.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter:
-  username: ivanchromjak
 
 logo: "/assets/img/logo-dark.svg"
 social:
@@ -31,12 +30,14 @@ social:
     - https://www.linkedin.com/in/ivanchromjak
     - https://github.com/ivanchromjak
 
-twitter_username: ivanchromjak
-github_username:  ivanchromjak
-linkedin_username: ivanchromjak
+author:
+  name: Ivan Chromjak
+  github: ivanchromjak
+  twitter: ivanchromjak
+  linkedin: ivanchromjak
 
 # google_analytics:
-footer_text: Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
+footer_text:
 
 # Build settings
 markdown: kramdown
@@ -47,6 +48,7 @@ gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-gist
+  - jekyll-avatar
 exclude:
   - Gemfile
   - Gemfile.lock

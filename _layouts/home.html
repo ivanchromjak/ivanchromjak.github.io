@@ -15,14 +15,14 @@ layout: default
       <div class="uk-width-1-1 uk-width-3-4@m text-xlarge uk-margin-xlarge-top about">{{ content }}</div>
 
       <div class="uk-width-1-1 uk-width-3-4@m text-xlarge footer-home">
-        {% if site.github_username %}
-          <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://github.com/{{ site.github_username | escape }}">GitHub</a></p>
+        {% if site.author.github %}
+          <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://github.com/{{ site.author.github | escape }}">GitHub</a></p>
         {% endif %}
-        {% if site.twitter_username %}
-          <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://twitter.com/{{ site.twitter_username | escape }}">Twitter</a></p>
+        {% if site.author.twitter %}
+          <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://twitter.com/{{ site.author.twitter | escape }}">Twitter</a></p>
         {% endif %}
-        {% if site.linkedin_username %}
-          <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username | escape }}">LinkedIn</a></p>
+        {% if site.author.linkedin %}
+          <p class="uk-display-inline-block uk-margin-right uk-margin-remove-vertical"><a target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin | escape }}">LinkedIn</a></p>
         {% endif %}
       </div>
 

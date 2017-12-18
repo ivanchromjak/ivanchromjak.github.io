@@ -10,6 +10,6 @@ Focusing on web solutions, developing WordPress [plugins](https://codecanyon.net
 
 Mainly using technologies: HTML5, CSS3, JavaScript, jQuery, PHP, Sass, Npm, Git.
 
-My work is available on [Envato](https://themeforest.net/user/pressapps/portfolio){:target="_blank"} and [Github](https://github.com/{{ site.github_username }}){:target="_blank"}.
+My work is available on [Envato](https://themeforest.net/user/pressapps/portfolio){:target="_blank"} and [Github](https://github.com/{{ site.author.github }}){:target="_blank"}.
 
-Want to contact me or say hello connect on [Twitter](https://twitter.com/{{ site.twitter_username }}){:target="_blank"}!
+Want to contact me or say hello connect on [Twitter](https://twitter.com/{{ site.author.twitter }}){:target="_blank"}!
