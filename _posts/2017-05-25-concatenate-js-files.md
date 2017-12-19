@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Concatenate JS Files
-categories: [Development, Jekyll]
-tags: [dev, jekyll, js]
+categories: [JavaScript, Jekyll]
+tags: javascript assets
 ---
 
 Minimise HTTP requests by including all JS files inside a single `assets/js/main.js` file.

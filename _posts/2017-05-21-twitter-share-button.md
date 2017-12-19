@@ -1,7 +1,7 @@
 ---
 layout: post
-categories: [Development, Jekyll]
-tags: [dev, jekyll, twitter]
+categories: [Jekyll]
+tags: twitter share
 ---
 
 Add Twitter share button to your Jekyll template.

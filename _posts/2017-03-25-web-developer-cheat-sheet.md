@@ -1,6 +1,7 @@
 ---
 layout: post
-categories: [Development, WordPress]
+categories: [Processes]
+tags: npm
 ---
 This cheat sheet saves me from learning by heart commands for all the different tools and task runners used in web development.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-categories: [CSS]
-tags: rem px
+categories: [CSS, Standards]
+tags: rem px css
 ---
 
 Conversion table from pixels to rem units for `16px` root `<html>` font size:

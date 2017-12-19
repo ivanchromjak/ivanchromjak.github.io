@@ -10,7 +10,7 @@ title: Blog
       {% for category in site.categories %}
         <div>
           {% capture category_name %}{{ category | first }}{% endcapture %}
-          <a href="#{{ category_name | slugize }}" class="button-category uk-width-1-1" data-uk-scroll="duration: 400; offset: 170">{{ category_name }}</a>
+          <a href="#{{ category_name | slugify }}" class="button-category uk-width-1-1" data-uk-scroll="duration: 400; offset: 170">{{ category_name }}</a>
         </div>
       {% endfor %}
 
@@ -24,7 +24,7 @@ title: Blog
 
   {% for category in site.categories %}
       {% capture category_name %}{{ category | first }}{% endcapture %}
-        <h2 id="{{ category_name | slugize }}" class="uk-margin-xlarge-top category-title">{{ category_name }}</h2>
+        <h2 id="{{ category_name | slugify }}" class="uk-margin-xlarge-top category-title">{{ category_name }}</h2>
         {% for post in site.categories[category_name] %}
             <h3 class="uk-article-title uk-margin-medium"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
         {% endfor %}

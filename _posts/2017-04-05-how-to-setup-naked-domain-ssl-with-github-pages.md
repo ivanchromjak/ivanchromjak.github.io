@@ -1,8 +1,8 @@
 ---
 layout: post
 title: How To Setup Naked Domain SSL With Github Pages
-categories: [Development, Jekyll]
-tags: [dev, jekyll, ssl]
+categories: [Jekyll]
+tags: ssl
 ---
 
 Add a free Cloudflare SSL certificate to your GitHub pages custom domain.

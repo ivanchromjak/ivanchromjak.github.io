@@ -296,7 +296,7 @@ footer {
 @mixin hook-article(){
   .article-content{
     line-height: 1.7;
-    > p, pre, img, table{
+    > p, pre, img, table, ul, ol{
       //margin-top: $global-medium-margin * 1.5;
       margin-bottom: $global-medium-margin * 1.3;
     }
