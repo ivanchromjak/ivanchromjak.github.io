@@ -119,6 +119,36 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+// Table
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    th {
+        padding: 16px 12px;
+        text-align: left;
+        vertical-align: bottom;
+        font-size: 12px;
+        font-weight: normal;
+        color: #999;
+        //text-transform: uppercase;
+    }
+    >tr:not(:first-child), >:not(:first-child)>tr, >:first-child>tr:not(:first-child) {
+        border-top: 1px solid $global-border;
+    }
+    tbody tr {
+        -webkit-transition: background-color .1s linear;
+        transition: background-color .1s linear;
+    }
+    td {
+        padding: 16px 12px;
+        vertical-align: top;
+    }
+}
+
+
+
+
 // Global
 a.uk-logo {
     font-weight: 300;
@@ -266,7 +296,7 @@ footer {
 @mixin hook-article(){
   .article-content{
     line-height: 1.7;
-    > p, pre, img{
+    > p, pre, img, table{
       //margin-top: $global-medium-margin * 1.5;
       margin-bottom: $global-medium-margin * 1.3;
     }
