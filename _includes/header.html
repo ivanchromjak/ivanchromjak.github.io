@@ -1,11 +1,11 @@
 <header data-uk-sticky="sel-target: .navbar; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed">
-  <div class="navbar uk-background-{% if page.layout == 'home' %}secondary uk-light{% else %}default{% endif %}">
+  <div class="navbar">
     <nav>
       <div class="uk-container uk-position-relative">
           <div data-uk-navbar>
               <div class="nav-overlay uk-navbar-left">
 
-                  <a class="uk-logo" href="{{ "/" | relative_url }}"><span>//</span> IVAN</a>
+                  <a class="uk-logo" href="{{ "/" | relative_url }}"><img src="/assets/img/logo-{% if page.layout == 'home' %}light{% else %}dark{% endif %}.png" alt="Ivan"></a>
 
               </div>
               <div class="nav-overlay uk-navbar-right">

@@ -36,8 +36,11 @@ author:
   twitter: ivanchromjak
   linkedin: ivanchromjak
 
-# google_analytics:
+google_analytics: UA-111401253-1
 footer_text:
+
+# Path to post content assets directory i.e post images, pdfs etc
+post_assets:        /assets/posts/
 
 # Build settings
 markdown: kramdown

@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="uk-background-{% if page.layout == 'home' %}secondary uk-light{% else %}default{% endif %}">
 
     {% include header.html %}
 

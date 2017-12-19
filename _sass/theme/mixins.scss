@@ -148,19 +148,25 @@ a.uk-logo {
   }
 }
 
-header{
-  .uk-background-default {
-    #search-results {
-      background-color: #fff;
-      a {
-        color: $global-secondary-background;
-      }
+body.uk-background-default {
+  #search-results {
+    background-color: #fff;
+    a {
+      color: $global-secondary-background;
     }
   }
-  .uk-background-secondary {
-    #search-results {
-      background-color: $global-secondary-background;
-    }
+  .navbar {
+    background-color: #fff;
+  }
+}
+
+
+body.uk-background-secondary {
+  #search-results {
+    background-color: $global-secondary-background;
+  }
+  .navbar {
+    background-color: $global-secondary-background;
   }
 }
 
