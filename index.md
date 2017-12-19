@@ -1,7 +1,8 @@
 ---
 layout: home
-title: Hello, I am Ivan
 permalink: /
+hero:
+    title: Hello, I am Ivan
 ---
 
 Web developer and [Envato Elite](https://themeforest.net/user/pressapps/portfolio){:target="_blank"} author with over 12000 awesome customers.

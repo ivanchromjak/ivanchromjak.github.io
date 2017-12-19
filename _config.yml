@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ivan Chromjak - Full Stack Web Developer
+title: Ivan Chromjak
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm Ivan Chromjak, a full stack web developer and Envato Elite author, making beautiful and useful things on the web since 2002 and the author of this blog.
+  Full stack web developer and Envato Elite author, making beautiful and useful things on the web since 2002 and the author of this blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:title/
 url: "https://ivanchromjak.com" # the base hostname & protocol for your site, e.g. http://example.com
