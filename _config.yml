@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:title/
 url: "https://ivanchromjak.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-logo: "/assets/img/logo-dark.svg"
+logo: "/assets/img/logo-dark.png"
 social:
   name: Ivan Chromjak
   links:
