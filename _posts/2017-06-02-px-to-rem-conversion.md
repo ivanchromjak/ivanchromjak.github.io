@@ -13,7 +13,7 @@ html {
 ```
 
 
-
+{: .uk-table .uk-table-divider}
 px | rem
 --- | ---
 10px | 0.625rem
