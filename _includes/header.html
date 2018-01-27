@@ -1,56 +1,25 @@
-<header data-uk-sticky="sel-target: .navbar; cls-active: uk-navbar-sticky" class="uk-sticky uk-sticky-fixed">
-  <div class="navbar">
-    <nav>
-      <div class="uk-container uk-position-relative">
-          <div data-uk-navbar>
-              <div class="nav-overlay uk-navbar-left">
+<div class="section-about uk-light" data-uk-height-viewport>
+  <div class="section-about-bg uk-position-absolute uk-background-contain uk-background-top-right uk-background-norepeat uk-background-image@s" style="background-image: url(../assets/img/ivan_bg.png);"></div>
 
-                  <a class="uk-logo" href="{{ "/" | relative_url }}"><img src="/assets/img/logo-{% if page.layout == 'home' %}light{% else %}dark{% endif %}.png" alt="Ivan"></a>
+  {% include navbar-static.html %}
 
-              </div>
-              <div class="nav-overlay uk-navbar-right">
-                  <ul class="uk-navbar-nav">
-                    {% for link in site.data.navigation %}
-                        {% if link.url contains 'http' %}
-                            {% assign domain = '' %}
-                        {% else %}
-                            {% assign domain = relative_url %}
-                        {% endif %}
-                        {% if link.url == page.url %}
-                            {% assign current = ' class="uk-active"' %}
-                        {% else %}
-                            {% assign current = null %}
-                        {% endif %}
-                        {% if link.title %}
-                            <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                  </ul>
+    <div class="uk-container uk-flex uk-flex-middle about-container uk-position-relative">
+      <div>
 
-                  <a class="uk-navbar-toggle" data-uk-search-icon data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        <div class="uk-width-1-1 uk-width-3-4@m">
+          <h1 class="uk-heading-hero">{{ page.hero.title }}</h1>
+        </div>
 
-                  <a href="/blog/" class="uk-icon-link" data-uk-icon="icon: table"></a>
-
-              </div>
-
-              <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
-
-                  <div class="uk-navbar-item uk-width-expand">
-                      <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
-                          <input id="search" class="uk-search-input" type="search" placeholder="Search..." autofocus>
-                          {% include search-results.html %}
-                      </form>
-                  </div>
-
-                  <a class="uk-navbar-toggle" data-uk-close data-uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
-
-              </div>
-
-          </div>
-
+        <div class="uk-width-1-1 uk-width-3-5@m uk-text-lead">
+          <p>Multi-talented web UX/UI designer and developer, Envato Elite author with over 12000 awesome customers and the creator of the best selling WordPress knowledge base plugin.</p>
+          <p>Passionate about creating beautiful and useful websites since 2011, specializing in WordPress and Jekyll development.</p>
+        </div>
 
       </div>
+    </div>
 
-    </nav>
-  </div>
-</header>
+    <div class="uk-container relative">
+      <div class="uk-position-absolute scroll-down"><a href="#work" data-uk-scroll>{% include icon-arrow-down.svg %}</a></div>
+    </div>
+
+</div>

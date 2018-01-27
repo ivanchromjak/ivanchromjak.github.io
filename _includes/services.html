@@ -1,0 +1,58 @@
+<div class="uk-section uk-section-large section-services">
+    <div class="uk-container">
+
+      <h2 class="uk-heading-hero uk-margin-large-bottom">What I Do</h2>
+
+      <div class="uk-child-width-expand@m uk-grid-large" data-uk-grid>
+        <div>
+          <h3 class="uk-margin-bottom">Web Design</h3>
+          <ul class="uk-list uk-text-lead">
+              <li>User Experience Design (UX)</li>
+              <li>User Interface Design (UI)</li>
+              <li>WordPress Site Creation & Customization</li>
+              <li>Jekyll Site Creation & Customization</li>
+              <li>Custom HTML Templates</li>
+              <li>Mobile Responsive Web Design</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="uk-margin-bottom">Web Development</h3>
+          <ul class="uk-list uk-text-lead">
+              <li>WordPress Themes & Plugins</li>
+              <li>Jekyll Themes</li>
+              <li>HTML Templates</li>
+              <li>Optimized for Speed and SEO</li>
+              <li>HTML5, CSS3, JavaScript, jQuery</li>
+              <li>PHP, Liquid, Sass, Npm, Git</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="uk-child-width-expand@m uk-grid-large footer" data-uk-grid>
+        <div>
+            {% if site.author.github %}
+                <h4><a class="hvr-forward" href="mailto:{{ site.author.github | escape }}">ivan@chromjak.com</a></h4>
+            {% endif %}
+        </div>
+        <div>
+          <div data-uk-grid class="uk-child-width-auto@s uk-grid-large social-links-">
+            {% if site.author.github %}
+            <div>
+                <h4><a class="hvr-forward" target="_blank" href="https://github.com/{{ site.author.github | escape }}">GitHub</a></h4>
+            </div>
+            {% endif %}
+            {% if site.author.twitter %}
+            <div>
+                <h4><a class="hvr-forward" target="_blank" href="https://twitter.com/{{ site.author.twitter | escape }}">Twitter</a></h4>
+            </div>
+            {% endif %}
+            {% if site.author.linkedin %}
+            <div>
+                <h4><a class="hvr-forward" target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin | escape }}">LinkedIn</a></h4>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+
+    </div>
+</div>

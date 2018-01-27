@@ -1,0 +1,41 @@
+<div data-uk-sticky1="sel-target: .navbar; cls-active: uk-navbar-sticky- navbar-bg;" class="uk-sticky- uk-sticky-fixed-">
+  <div class="navbar">
+    <nav>
+      <div class="uk-container uk-position-relative">
+          <div data-uk-navbar>
+              <div class="nav-overlay uk-navbar-left">
+
+                  <a class="uk-logo" href="{{ "/" | relative_url }}"><img src="/assets/img/logo-{% if page.layout == 'home' %}light{% else %}dark{% endif %}.svg" alt="Ivan"></a>
+
+              </div>
+              <div class="nav-overlay uk-navbar-right">
+                  <ul class="uk-navbar-nav">
+                    {% for link in site.data.navigation %}
+                        {% if link.url contains 'http' %}
+                            {% assign domain = '' %}
+                        {% else %}
+                            {% assign domain = relative_url %}
+                        {% endif %}
+                        {% if link.url == page.url %}
+                            {% assign current = ' class="uk-active"' %}
+                        {% else %}
+                            {% assign current = null %}
+                        {% endif %}
+                        {% if link.title %}
+                            <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                  </ul>
+
+                  <a class="uk-navbar-item navbar-search-icon" href="#search-modal" data-uk-toggle>{% include icon-search.svg %}</a>
+
+              </div>
+
+          </div>
+
+
+      </div>
+
+    </nav>
+  </div>
+</div>

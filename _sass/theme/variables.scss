@@ -1,5 +1,5 @@
 
-$accent-color: #ffd012;
+$accent-color: #304FFE;
 $global-secondary-background: #141415;
 
 $global-link-color: $global-secondary-background;
@@ -13,38 +13,56 @@ $global-color: $global-secondary-background;
 $base-code-color: lighten($global-secondary-background, 15%);
 
 $base-em-color: $global-color;
-$container-max-width: 1000px;
+//$container-max-width: 1000px;
 $container-small-max-width: 700px;
 
-$base-body-font-family: system-ui;
-$base-heading-font-family: "Geomanist", system-ui;
+$global-font-family: "Futura-Book", system-ui;
+$base-heading-font-family: "Futura-Bold", system-ui;
 
-$base-heading-font-weight: 500;
+//$base-heading-font-weight: 500;
 $base-heading-color: $global-secondary-background;
-$heading-hero-font-size:                         3rem;
-$heading-hero-font-size-s:                       4.5rem;
-$heading-hero-font-size-m:                       6rem;
+$heading-hero-font-size:                         2.5rem;
+$heading-hero-font-size-s:                       3.4375rem;
+$heading-hero-font-size-m:                       4.313rem;
 
 $home-text-font-size: 2rem;
 $home-text-font-size-s: 2.75rem;
 $home-text-font-size-m: 3.75rem;
 
-$heading-hero-line-height-m:                     0.88;
+$heading-hero-line-height-m:                     1.2;
 
 $article-meta-font-size: 	0.8125rem;
 $article-meta-line-height: 1.3;
 
 $base-h1-font-size: 1.875rem;
 $base-h2-font-size: 1.5rem;
-$base-h3-font-size: 1.25rem;
-$base-h4-font-size: 1.125rem;
+$base-h3-font-size: 1.5rem;
+$base-h4-font-size: 1.35rem;
 
+  $text-lead-font-size: 1.375rem;
+  $text-lead-line-height: 1.6;
+  $text-lead-color: #000;
+
+  $card-title-font-size:                          3rem;
+  $card-title-line-height:                        1.2;
+  $border-rounded-border-radius:                  3px;
+  $search-placeholder-color:  #000;
 $text-large-font-size: 1.4rem;
 
 $article-title-font-size: $base-h1-font-size;
 
+// $navbar-nav-item-color:                          $global-muted-color !default;
+  $navbar-nav-item-font-size:                      1.375rem;
+  $navbar-nav-item-font-family:                    "Futura-Medium", system-ui;
+  $navbar-nav-item-text-transform:                  none;
+
+  $inverse-navbar-nav-item-color:                 #fff;
+  $inverse-navbar-nav-item-hover-color:           #fff;
+  $inverse-navbar-nav-item-onclick-color:         #fff;
+  $inverse-navbar-nav-item-active-color:          #fff;
+
 $navbar-nav-item-height: 140px;
-$inverse-navbar-nav-item-color: $global-secondary-background;
+//$inverse-navbar-nav-item-color: $global-secondary-background;
 $navbar-nav-item-color: $global-secondary-background;
 $navbar-nav-item-hover-color: $global-muted-color;
 $navbar-nav-item-active-color: $global-muted-color;

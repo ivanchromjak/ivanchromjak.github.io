@@ -3,15 +3,17 @@
 
   {% include head.html %}
 
-  <body class="uk-background-{% if page.layout == 'home' %}secondary uk-light{% else %}default{% endif %}">
+  <body class="-uk-background-{% if page.layout == 'home' %}secondary{% else %}default{% endif %}">
+    
+    {% include search-modal.html %}
 
-    {% include header.html %}
+    {% if page.navbar != 'hero' %}
+      {% include header.html %}
+    {% endif %}
 
     {{ content }}
 
-    {% if page.layout != 'home' %}
-      {% include footer.html %}
-    {% endif %}
+    {% include services.html %}
 
   </body>
 
