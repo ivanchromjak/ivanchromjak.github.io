@@ -1,7 +1,7 @@
 
 $accent-color: #304FFE;
 $global-secondary-background: #141415;
-
+$global-primary-background: #304FFE;
 $global-link-color: $global-secondary-background;
 $global-link-hover-color: $global-secondary-background;
 
@@ -47,12 +47,13 @@ $base-h4-font-size: 1.35rem;
   $card-title-line-height:                        1.2;
   $border-rounded-border-radius:                  3px;
   $search-placeholder-color:  #000;
+  $nav-primary-item-font-size: 2.625rem;
 $text-large-font-size: 1.4rem;
 
 $article-title-font-size: $base-h1-font-size;
 
 // $navbar-nav-item-color:                          $global-muted-color !default;
-  $navbar-nav-item-font-size:                      1.375rem;
+  $navbar-nav-item-font-size:                      1.125rem;
   $navbar-nav-item-font-family:                    "Futura-Medium", system-ui;
   $navbar-nav-item-text-transform:                  none;
 

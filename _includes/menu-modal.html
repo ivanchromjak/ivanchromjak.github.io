@@ -1,0 +1,50 @@
+<div id="menu" class="uk-modal-full menu-modal" data-uk-modal>
+
+    <div class="uk-modal-dialog uk-background-primary uk-light">
+        <button class="uk-modal-close-full uk-close-large uk-background-primary" type="button" data-uk-close></button>
+
+        <div data-uk-height-viewport>
+
+          <div class="uk-container uk-container-small">
+
+            <ul class="uk-nav-primary uk-nav-center" data-uk-nav>
+              {% for link in site.data.navigation %}
+                  {% if link.url contains 'http' %}
+                      {% assign domain = '' %}
+                  {% else %}
+                      {% assign domain = relative_url %}
+                  {% endif %}
+                  {% if link.url == page.url %}
+                      {% assign current = ' class="uk-active"' %}
+                  {% else %}
+                      {% assign current = null %}
+                  {% endif %}
+                  {% if link.title %}
+                      <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
+                  {% endif %}
+              {% endfor %}
+            </ul>
+
+            <form class="uk-search uk-search-large uk-width-1-1 uk-margin-large-top" onsubmit="return false;">
+                <input id="search" class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
+            </form>
+
+            <ul id="search-results" class="uk-list uk-text-center"></ul>
+
+            <script>
+              SimpleJekyllSearch({
+                searchInput: document.getElementById('search'),
+                resultsContainer: document.getElementById('search-results'),
+                noResultsText: '<li><h4>No results found</h4></li>',
+                searchResultTemplate: '<li><h4><a href="{url}">{title}</a></h4></li>',
+                json: '/search.json'
+              });
+            </script>
+
+
+          </div>
+
+        </div>
+
+    </div>
+</div>

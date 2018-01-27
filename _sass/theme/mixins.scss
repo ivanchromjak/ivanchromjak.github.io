@@ -239,7 +239,9 @@
   animation-timing-function: ease-out;
 }
 
-
+.menu-modal .uk-nav-primary {
+  margin-top: 20vh;
+}
 
 
 @mixin hook-heading-hero(){
