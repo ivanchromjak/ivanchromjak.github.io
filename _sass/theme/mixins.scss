@@ -241,14 +241,20 @@
 
 .menu-modal .uk-nav-primary {
   margin-top: 20vh;
+  font-family: "Futura-Medium", system-ui;
+  letter-spacing: 3px;
+  .uk-active a, a:hover {
+    //text-decoration: underline;
+  }
 }
 
-
+@mixin hook-text-lead(){
+  font-family: "Futura-Medium", system-ui;
+}
 @mixin hook-heading-hero(){
   letter-spacing: 14px;
   text-transform: uppercase;
 }
-@mixin hook-text-lead(){}
 @mixin hook-navbar-nav-item(){
   letter-spacing: 2px;
   font-weight: inherit;
@@ -289,7 +295,8 @@
 .section-about {
   box-sizing: border-box;
   min-height: 100vh;
-  background: linear-gradient(142.35deg, #304FFE 14.45%, #304FFE 14.45%, #1C06A1 100.46%);
+  //background: linear-gradient(142.35deg, #304FFE 14.45%, #304FFE 14.45%, #1C06A1 100.46%);
+  background: linear-gradient(125.42deg, #3806A1 0%, #3806A1 0%, #304FFE 100%);
 }
 .wrapper-about {
   // top: 140px;
@@ -339,10 +346,11 @@
   }
 }
 .section-services {
-  background: linear-gradient(136.16deg, #FBFF4F 16.89%, #FBFF4F 16.89%, #F0D800 92.21%);
+  //background: linear-gradient(136.16deg, #FBFF4F 16.89%, #FBFF4F 16.89%, #F0D800 92.21%);
+  background: #f2f000;
   ul {
     line-height: 1.3;
-    font-size: 1.375rem;
+    //font-size: 1.375rem;
   }
   .footer {
     a {
@@ -361,7 +369,7 @@
 
     .section-services {
       ul {
-        font-size: 1.6875rem;
+        //font-size: 1.6875rem;
       }
     }
 

@@ -46,8 +46,11 @@ $base-h4-font-size: 1.35rem;
   $card-title-font-size:                          3rem;
   $card-title-line-height:                        1.2;
   $border-rounded-border-radius:                  3px;
-  $search-placeholder-color:  #000;
-  $nav-primary-item-font-size: 2.625rem;
+  $inverse-search-placeholder-color:  #ffffff8a;
+  $nav-primary-item-font-size: 2.375rem;
+  $search-large-font-size: 2.375rem;
+
+
 $text-large-font-size: 1.4rem;
 
 $article-title-font-size: $base-h1-font-size;
@@ -57,10 +60,14 @@ $article-title-font-size: $base-h1-font-size;
   $navbar-nav-item-font-family:                    "Futura-Medium", system-ui;
   $navbar-nav-item-text-transform:                  none;
 
-  $inverse-navbar-nav-item-color:                 #fff;
-  $inverse-navbar-nav-item-hover-color:           #fff;
-  $inverse-navbar-nav-item-onclick-color:         #fff;
-  $inverse-navbar-nav-item-active-color:          #fff;
+  // $inverse-navbar-nav-item-color:                 #ffffff8a;
+  // $inverse-navbar-nav-item-hover-color:           #fff;
+  // $inverse-navbar-nav-item-onclick-color:         #fff;
+  // $inverse-navbar-nav-item-active-color:          #ffffff8a;
+  $inverse-nav-primary-item-color:                #ffffff8a;
+  $inverse-nav-primary-item-hover-color:           #fff;
+  $inverse-nav-primary-item-active-color:          #fff;
+
 
 $navbar-nav-item-height: 140px;
 //$inverse-navbar-nav-item-color: $global-secondary-background;
