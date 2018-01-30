@@ -9,7 +9,7 @@ $global-muted-color: #6f6f73;
 $inverse-global-muted-color: #fff;
 $inverse-global-color: #fff;
 
-$global-color: $global-secondary-background;
+$global-color: #2f2f31; //$global-secondary-background;
 $base-code-color: lighten($global-secondary-background, 15%);
 
 $base-em-color: $global-color;
@@ -31,8 +31,8 @@ $home-text-font-size-m: 3.75rem;
 
 $heading-hero-line-height-m:                     1.2;
 
-$article-meta-font-size: 	0.8125rem;
-$article-meta-line-height: 1.3;
+$article-meta-font-size: 	1.0625rem;
+$article-meta-line-height: 1.5;
 
 $base-h1-font-size: 1.875rem;
 $base-h2-font-size: 1.5rem;
@@ -53,7 +53,7 @@ $base-h4-font-size: 1.35rem;
 
 $text-large-font-size: 1.4rem;
 
-$article-title-font-size: $base-h1-font-size;
+$article-title-font-size: 3rem;
 
 // $navbar-nav-item-color:                          $global-muted-color !default;
   $navbar-nav-item-font-size:                      1.125rem;
@@ -64,7 +64,7 @@ $article-title-font-size: $base-h1-font-size;
   // $inverse-navbar-nav-item-hover-color:           #fff;
   // $inverse-navbar-nav-item-onclick-color:         #fff;
   // $inverse-navbar-nav-item-active-color:          #ffffff8a;
-  $inverse-nav-primary-item-color:                #ffffff8a;
+  $inverse-nav-primary-item-color:                #ffffffbf;
   $inverse-nav-primary-item-hover-color:           #fff;
   $inverse-nav-primary-item-active-color:          #fff;
 
@@ -75,6 +75,6 @@ $navbar-nav-item-color: $global-secondary-background;
 $navbar-nav-item-hover-color: $global-muted-color;
 $navbar-nav-item-active-color: $global-muted-color;
 $navbar-toggle-color: $global-secondary-background;
-$navbar-toggle-hover-color: $global-muted-color;
+$navbar-toggle-hover-color: $global-secondary-background;
 $icon-link-color: $global-secondary-background;
 $icon-link-hover-color: $global-muted-color;

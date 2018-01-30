@@ -1,0 +1,26 @@
+<div data-uk-sticky="sel-target: .navbar; cls-active: uk-navbar-sticky uk-background-default;" class="uk-sticky uk-sticky-fixed">
+  <div class="navbar">
+    <nav>
+      <div class="uk-container uk-position-relative">
+          <div data-uk-navbar>
+              <div class="uk-navbar-left">
+
+                  <a class="uk-logo" href="{{ "/" | relative_url }}"><img src="/assets/img/logo-{% if page.navbar == 'hero' %}light{% else %}dark{% endif %}.svg" alt="Ivan"></a>
+
+              </div>
+              <div class="nav-overlay uk-navbar-right">
+
+                  <a class="uk-navbar-toggle" href="#menu" data-uk-toggle>
+                      <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                  </a>
+
+              </div>
+
+          </div>
+
+
+      </div>
+
+    </nav>
+  </div>
+</div>

@@ -36,44 +36,34 @@ layout: default
 <div id="work" class="uk-background-muted uk-section uk-section-large">
 
     <div class="uk-container">
-
-      <div class="uk-card uk-grid-collapse uk-margin-xlarge" uk-grid>
-          <div class="uk-card-media-left uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true;">
-              <a href="#"><img src="assets/img/memoir_th.png" alt="" uk-cover>
-              <canvas width="900" height="675"></canvas></a>
-          </div>
-          <div class="uk-width-2-5@m uk-flex uk-flex-middle">
-              <div class="uk-card-body uk-card-large">
-                  <a class="hvr-forward" href="#"><h3 class="uk-card-title">Memoir Blogging Theme</h3>{% include icon-arrow-right.svg %}</a>
-              </div>
-          </div>
-      </div>
-
-      <div class="uk-card uk-grid-collapse uk-margin-xlarge" uk-grid>
-          <div class="uk-flex-last@m uk-card-media-right uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true;">
-              <a href="#"><img src="assets/img/minimal_th.png" alt="" uk-cover>
-              <canvas width="900" height="675"></canvas></a>
-          </div>
-          <div class="uk-width-2-5@m uk-flex uk-flex-middle">
-              <div class="uk-card-body uk-card-large">
-                  <a class="hvr-forward" href="#"><h3 class="uk-card-title">Minimal FAQ Template</h3>{% include icon-arrow-right.svg %}</a>
-              </div>
-          </div>
-      </div>
-
-      <div class="uk-card uk-grid-collapse uk-margin-xlarge" uk-grid>
-          <div class="uk-card-media-left uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true;">
-              <a href="#"><img src="assets/img/lmspress_th.png" alt="" uk-cover>
-              <canvas width="900" height="675"></canvas></a>
-          </div>
-          <div class="uk-width-2-5@m uk-flex uk-flex-middle">
-              <div class="uk-card-body uk-card-large">
-                  <a class="hvr-forward" href="#"><h3 class="uk-card-title">Learning Management System</h3>{% include icon-arrow-right.svg %}</a>
-              </div>
-          </div>
-      </div>
-
-
+      {% for item in site.work reversed %}
+        {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
+        {% if thecycle == 'left' %}
+        <div class="uk-card uk-grid-collapse uk-margin-xlarge" uk-grid>
+            <div class="uk-card-media-left uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true;">
+                <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
+                <canvas width="900" height="675"></canvas></a>
+            </div>
+            <div class="uk-width-2-5@m uk-flex uk-flex-middle">
+                <div class="uk-card-body uk-card-large">
+                    <a class="hvr-forward" href="{{ item.url }}"><h3 class="uk-card-title">{{ item.title }}</h3>{% include icon-arrow-right.svg %}</a>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="uk-card uk-grid-collapse uk-margin-xlarge" uk-grid>
+            <div class="uk-flex-last@m uk-card-media-right uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true;">
+                <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
+                <canvas width="900" height="675"></canvas></a>
+            </div>
+            <div class="uk-width-2-5@m uk-flex uk-flex-middle">
+                <div class="uk-card-body uk-card-large">
+                    <a class="hvr-forward" href="{{ item.url }}"><h3 class="uk-card-title">{{ item.title }}</h3>{% include icon-arrow-right.svg %}</a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+      {% endfor %}
     </div>
 
 </div>

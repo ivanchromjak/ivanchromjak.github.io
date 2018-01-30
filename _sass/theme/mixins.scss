@@ -191,7 +191,7 @@
 // }
 
 .hvr-forward {
-    display: inline-block;
+    display: block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -384,7 +384,15 @@
 
 
 }
-
+.section-categories-overlay {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(134.28deg, rgba(52, 48, 254, 0.85) 18.87%, rgba(102, 48, 254, 0.85) 77.3%);
+}
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -506,10 +514,10 @@ footer {
 .button-category {
     background-color: transparent;
     margin: 0;
-    border: solid 2px $global-secondary-background;
+    border: solid 2px #fff;
     overflow: visible;
-    font-family: $base-heading-font-family;
-    font-weight: 600;
+    font-family: "Futura-Medium", system-ui;
+    //font-weight: 600;
     color: inherit;
     letter-spacing: 2px;
     text-transform: none;
@@ -517,7 +525,7 @@ footer {
     box-sizing: border-box;
     padding: 5px 10px 0;
     vertical-align: middle;
-    font-size: $base-h3-font-size;
+    font-size: 1.375rem;
     line-height: 53px;
     text-align: center;
     text-decoration: none;
@@ -527,14 +535,15 @@ footer {
     -webkit-transition-property: color, background-color, border-color;
     transition-property: color, background-color, border-color;
     &:hover {
-      background-color: $global-secondary-background;
-      color: #fff;
+      background-color: #fff;
+      color: #000 !important;
       text-decoration: none;
     }
 }
 @mixin hook-article(){
   .article-content{
-    line-height: 2;
+    font-size: 1.25rem;
+    line-height: 1.8;
     > p, pre, img, > table, ul, ol{
       //margin-top: $global-medium-margin * 1.5;
       margin-bottom: $global-medium-margin * 1.3;
@@ -569,7 +578,7 @@ footer {
 }
 @mixin hook-article-misc(){
     .article-content {
-        line-height: 1.8;
+        //line-height: 1.8;
     }
     h3.uk-article-title {
       font-size: $base-h2-font-size;
@@ -578,11 +587,13 @@ footer {
       }
     }
     .category-title {
-      font-size: $base-h1-font-size;
+      font-size: $card-title-font-size;
+      //text-transform: uppercase;
+      line-height: 1;
     }
     .categories {
-      hr:last-of-type{
-        display: none;
+      a:hover{
+        text-decoration: none;
       }
     }
 }
