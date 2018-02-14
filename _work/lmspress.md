@@ -4,8 +4,12 @@ image: lmspress_th.png
 date: 2018-01-20
 ---
 
-Dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interdum.
+LMS Press was commissioned by Envato for Themeforest to fill the gap for specialised Learning Management System WordPress theme on the marketplace. LMS Press is a fully featured management system for courses and events with free lesson preview, purchase, certification ratings and much more. LMS Press utilises WooCommerce plugin for its ecommerce features.
 
-Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
+<br>
+{% include image.html img="lmspress-browser.png" alt="LMS Press Theme Browser" %}
 
-Dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interdum.
+<br>
+
+{:.uk-text-center}
+{% include image.html img="lmspress-mobile.png" alt="LMS Press Theme Mobile" %}

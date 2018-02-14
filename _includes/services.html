@@ -30,8 +30,34 @@
 
       <div class="uk-child-width-expand@m uk-grid-large footer" data-uk-grid>
         <div>
-            {% if site.author.github %}
-                <h4><a class="hvr-forward" href="mailto:{{ site.author.github | escape }}">ivan@chromjak.com</a></h4>
+            {% if site.author.email %}
+
+              {% assign plain_link = 'mailto:' | append: site.author.email %}
+              {% assign obfuscated_link = plain_link | url_encode | split: '' | reverse | join: '' %}
+              <h4><a class="email hvr-forward" href="{{ obfuscated_link }}">{{ site.author.email }}</a></h4>
+
+              <script>
+                var Contact = {};
+
+                Contact.deobfuscateLink = function(element) {
+                    var absolutePath   = element.href,
+                        pathSegments   = absolutePath.split('/'),
+                        obfuscatedLink = pathSegments[pathSegments.length - 1],
+                        unreversedLink = obfuscatedLink.split('').reverse().join(''),
+                        deobfuscation  = decodeURIComponent(unreversedLink);
+                    return deobfuscation;
+                }
+
+                Contact.patchButtons = function(klass) {
+                    var elements = document.getElementsByClassName(klass);
+                    for (i = 0; i < elements.length; i++) {
+                        elements[i].href = Contact.deobfuscateLink(elements[i]);
+                    }
+                }
+
+                Contact.patchButtons('email');
+              </script>
+
             {% endif %}
         </div>
         <div>

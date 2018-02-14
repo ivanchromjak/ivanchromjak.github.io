@@ -4,8 +4,13 @@ image: memoir_th.png
 date: 2018-01-29
 ---
 
-Dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interdum.
+Memoir is fully responsive Jekyll theme for bloggers, storytellers and photographers.
 
-Nulla non sollicitudin. Morbi sit amet laoreet ipsum, vel pretium mi. Morbi varius, tellus in accumsan blandit, elit ligula eleifend velit, luctus mattis ante nulla condimentum nulla. Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
+<br>
 
-Dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interdum.
+{% include image.html img="memoir-browser.png" alt="Memoir Theme Browser" %}
+
+<br>
+
+{:.uk-text-center}
+{% include image.html img="memoir-mobile.png" alt="Memoir Theme Mobile" %}
