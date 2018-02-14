@@ -39,7 +39,7 @@ layout: default
       {% for item in site.work reversed %}
         {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
         {% if thecycle == 'left' %}
-        <div class="uk-card uk-grid-collapse uk-margin-xlarge" uk-grid>
+        <div class="uk-card uk-grid-collapse uk-margin-xlarge" data-uk-grid>
             <div class="uk-card-media-left uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true;">
                 <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
                 <canvas width="900" height="675"></canvas></a>
@@ -51,7 +51,7 @@ layout: default
             </div>
         </div>
         {% else %}
-        <div class="uk-card uk-grid-collapse uk-margin-xlarge" uk-grid>
+        <div class="uk-card uk-grid-collapse uk-margin-xlarge" data-uk-grid>
             <div class="uk-flex-last@m uk-card-media-right uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true;">
                 <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
                 <canvas width="900" height="675"></canvas></a>
