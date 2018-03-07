@@ -64,6 +64,8 @@ sass:
 collections:
   work:
     output: true
+  learn:
+    output: true
 
 # Defaults
 defaults:
@@ -73,3 +75,9 @@ defaults:
       type: work
     values:
       layout: work
+  # _learn
+  - scope:
+      path: ""
+      type: learn
+    values:
+      layout: learn
