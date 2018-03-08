@@ -42,7 +42,7 @@ topics: [Build a Website, Design & Development]
 </div>
 
 <div class="uk-background-muted">
-  <div class="uk-container uk-container-small- categories">
+  <div class="uk-container categories">
     {% for category in topics %}
       <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
         <h2 id="{{ category | slugify }}" class="uk-margin-medium-bottom category-title">{{ category }}</h2>
@@ -63,7 +63,7 @@ topics: [Build a Website, Design & Development]
                     </div>
                 </div>
                 <div class="uk-card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p>{{ course.excerpt }}</p>
                 </div>
                 <div class="uk-card-footer">
                   {% for tag in course.tags %}

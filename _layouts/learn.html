@@ -2,76 +2,38 @@
 layout: default
 ---
 
-<div class="uk-section">
-    <div class="uk-container">
-        <div class="uk-grid-large" data-uk-grid>
-            <div class="sidebar-fixed-width uk-visible@m">
-                <div class="sidebar-docs uk-position-fixed">
-                  {% for course in site.data.navigation_learn %}
-                    <h5>{{ course.title }}</h5>
-                    {% if course.sections %}
+<div class="uk-margin-large-top uk-margin-xlarge-bottom">
+  <div class="uk-container uk-container-small">
 
-                      {% for section in course.sections %}
-                        <h6>{{ section.title }}</h6>
-                        <ul class="uk-nav uk-nav-default doc-nav">
-                        {% for lesson in section.lessons %}
-                          {% assign doc_url = lesson | prepend:"/learn/" | append:"/" %}
-                          {% assign p = site.learn | where:"url", doc_url | first %}
-                          <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
-                        {% endfor %}
-                        </ul>
+    <article class="uk-article">
+        <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+         {% if page.excerpt %}<p class="uk-text-lead">{{ page.excerpt }}</p>{% endif %}
 
-                      {% endfor %}
-                    {% else %}
+        <div class="article-content">
+          {{ content }}
+        </div>
 
-                      <ul class="uk-nav uk-nav-default doc-nav">
-                      {% for lesson in course.lessons %}
-                        {% assign doc_url = lesson | prepend:"/learn/" | append:"/" %}
-                        {% assign p = site.learn | where:"url", doc_url | first %}
-                        <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
-                      {% endfor %}
-                      </ul>
-                      {% endif %}
+        <div class="uk-article-meta uk-margin-large-top uk-margin-medium-bottom">
+            {% include post-meta.html %}
+        </div>
 
-                  {% endfor %}
-                </div>
-            </div>
+        {% include share.html %}
 
-            <div class="uk-width-1-1 uk-width-expand@m">
+        <hr class="uk-margin-medium">
 
-                <article class="uk-article">
+        {% include paginate-post.html %}
 
-                    <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+        {% include related-learn.html %}
 
-                    {% if page.subtitle %}<p class="subtitle uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}
+    </article>
 
-                    <div class="uk-article-meta uk-margin-top uk-margin-medium-bottom">
-                        {% include post-meta.html %}
-                    </div>
+    <script>
+        // Table of contents scroll to
+        UIkit.scroll('#markdown-toc a', {
+            duration: 400,
+            offset: 120
+        });
+    </script>
 
-                    <div class="article-content">
-                        {{ content }}
-                        {% include share.html %}
-                    </div>
-
-                    <hr class="uk-margin-medium">
-
-                    {% include paginate-doc.html %}
-
-                    {% include related-docs.html %}
-
-                    {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
-                </article>
-
-                <script>
-                    // Table of contents scroll to
-                    UIkit.scroll('#markdown-toc a', {
-                        duration: 400,
-                        offset: 120
-                    });
-                </script>
-
-            </div>
-
-    </div>
+  </div>
 </div>
