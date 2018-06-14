@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="uk-section uk-section-primary">
+    <div class="uk-container">
+
+        <div class="uk-grid-large uk-flex-middle" uk-grid>
+            <div class="uk-width-expand@m">
+                <h1 class="uk-heading-hero tm-heading-hero-l">{{ page.title | escape }}</h1>
+                {% if page.subtitle %}<span>{{ page.subtitle | escape }}</span>{% endif %}
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="uk-container uk-container-small">
+
+    <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
+      {% for item in site.journal reversed %}
+        <article class="uk-article">
+          <div class="uk-grid-large" data-uk-grid>
+
+            <div class="uk-width-1-4">
+                <a href="{{item.link}}" target="_blank"><img src="{% if item.image contains '//' %}{{ item.image }}{% else %}{{ site.assets_reading | absolute_url }}{{ item.image }}{% endif %}" alt="{{item.title}}" data-uk-img></a>
+            </div>
+            <div class="uk-width-3-4">
+              <h2 class="uk-article-title uk-margin-small-bottom"><a href="{{item.link}}" target="_blank">{{item.title}}</a></h2>
+              <p>by {{ item.author }}</p>
+              <div class="article-content">{{ item.content }}</div>
+
+              <!-- <p class="uk-article-meta">
+                {% for tag in item.tags %}
+                  <span class="card-label">{{ tag }}</span>
+                {% endfor %}
+              </p> -->
+            </div>
+
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+</div>

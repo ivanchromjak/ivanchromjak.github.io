@@ -11,5 +11,3 @@ Jekyll build process example using npm scripts to build `assets/js/main.min.js`.
 3. Availabele commands:
   * `npm install`
   * `npm run watch`
-
-{% gist 8a2304f171c264af3afb192e1aa75c3e %}

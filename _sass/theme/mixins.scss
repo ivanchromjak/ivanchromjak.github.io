@@ -597,6 +597,9 @@ footer {
     .article-content {
         //line-height: 1.8;
     }
+    h2.uk-article-title {
+      font-size: 2.125rem; //2.375rem;
+    }
     h3.uk-article-title {
       font-size: $base-h2-font-size;
       a {
