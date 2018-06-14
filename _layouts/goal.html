@@ -24,10 +24,18 @@ layout: default
           <div class="uk-grid-large" data-uk-grid>
 
             <div class="uk-width-1-4">
-                <a href="{{item.link}}" target="_blank"><img src="{% if item.image contains '//' %}{{ item.image }}{% else %}{{ site.assets_reading | absolute_url }}{{ item.image }}{% endif %}" alt="{{item.title}}" data-uk-img></a>
+              <h4>{{ item.date | date: "%A" }}</h4>
+              {{ item.date | date_to_string }}
+
+              <div data-uk-lightbox>
+                <a href="{% if item.image contains '//' %}{{ item.image }}{% else %}{{ site.assets_journal | absolute_url }}{{ item.image }}{% endif %}" data-caption="{{ item.caption }}" data-alt="{{ item.caption }}">
+                  <img src="{% if item.image contains '//' %}{{ item.image }}{% else %}{{ site.assets_journal | absolute_url }}{{ item.image }}{% endif %}" alt="{{item.title}}" data-uk-img>
+                </a>
+              </div>
+
             </div>
             <div class="uk-width-3-4">
-              <h2 class="uk-article-title uk-margin-small-bottom"><a href="{{item.link}}" target="_blank">{{item.title}}</a></h2>
+              <h2 class="uk-article-title uk-margin-small-bottom">{{item.title}}</h2>
               <p>by {{ item.author }}</p>
               <div class="article-content">{{ item.content }}</div>
 

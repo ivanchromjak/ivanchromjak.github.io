@@ -43,6 +43,8 @@ footer_text:
 # Path to post content assets directory i.e post images, pdfs etc
 post_assets:        /assets/posts/
 assets_reading:     /assets/img/reading/
+assets_journal:     /assets/img/journal/
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

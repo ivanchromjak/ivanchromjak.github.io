@@ -1,6 +1,8 @@
 ---
 categories: [CSS, Standards]
 tags: rem px css
+image: street.jpg
+caption: Blaaaaaaaa
 ---
 
 Add a free Cloudflare SSL certificate to your GitHub pages custom domain.

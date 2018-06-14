@@ -1,0 +1,21 @@
+{% for item in site.reading %}
+  {% if item.tags contains include.tag %}
+<div class="uk-inline">
+    <a type="button">{{ item.title }}</a>
+    <div class="uk-width-large" data-uk-drop="mode: click">
+        <div class="uk-card uk-card-body uk-card-default">
+          <div class="uk-drop-grid" data-uk-grid>
+              <div class="uk-width-1-4@m">
+                  <a href="{{item.link}}" target="_blank"><img src="{% if item.image contains '//' %}{{ item.image }}{% else %}{{ site.assets_reading | absolute_url }}{{ item.image }}{% endif %}" alt="{{item.title}}" data-uk-img></a>
+              </div>
+              <div class="uk-width-3-4@m">
+                  <h5><a href="{{item.link}}" target="_blank">{{item.title}}</a></h5>
+                  {{ item.content }}
+                  <a href="{{item.link}}" target="_blank" class="uk-button uk-button-default uk-button-small">Buy</a>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+  {% endif %}
+{% endfor %}
