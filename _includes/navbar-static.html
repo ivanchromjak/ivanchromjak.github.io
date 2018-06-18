@@ -4,7 +4,10 @@
         <div data-uk-navbar>
             <div class="uk-navbar-left">
 
-                <a class="uk-logo" href="{{ "/" | relative_url }}"><img src="/assets/img/logo-{% if page.navbar == 'hero' %}light{% else %}dark{% endif %}.svg" alt="Ivan"></a>
+              <a class="uk-logo" href="{{ "/" | relative_url }}">
+                <img src="/assets/img/logo-dark.svg" alt="Ivan">
+                <img src="/assets/img/logo-light.svg" alt="Ivan" class="uk-logo-inverse">
+              </a>
 
             </div>
             {% include nav.html %}

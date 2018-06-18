@@ -21,9 +21,9 @@ $base-heading-font-family: "Futura-Bold", system-ui;
 
 //$base-heading-font-weight: 500;
 $base-heading-color: $global-secondary-background;
-$heading-hero-font-size:                         2.5rem;
-$heading-hero-font-size-s:                       3.4375rem;
-$heading-hero-font-size-m:                       4.313rem;
+$heading-hero-font-size:                         2.375rem;
+$heading-hero-font-size-s:                       3.75rem;
+$heading-hero-font-size-m:                       5rem;
 
 $home-text-font-size: 2rem;
 $home-text-font-size-s: 2.75rem;
@@ -72,8 +72,8 @@ $article-title-font-size: 3rem;
 $navbar-nav-item-height: 140px;
 //$inverse-navbar-nav-item-color: $global-secondary-background;
 $navbar-nav-item-color: $global-secondary-background;
-$navbar-nav-item-hover-color: $global-muted-color;
-$navbar-nav-item-active-color: $global-muted-color;
+$navbar-nav-item-hover-color: $global-secondary-background;
+$navbar-nav-item-active-color: $global-secondary-background;
 $navbar-toggle-color: $global-secondary-background;
 $navbar-toggle-hover-color: $global-secondary-background;
 $icon-link-color: $global-secondary-background;

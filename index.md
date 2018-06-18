@@ -3,5 +3,5 @@ layout: home
 permalink: /
 navbar: hero
 hero:
-    title: Hello<br> I am Ivan
+    title: Master<br> Create<br> Experience #Hello<br> I am Ivan
 ---

@@ -386,16 +386,22 @@
 
 
 }
-.section-categories-overlay {
+.section-overlay {
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   height: 100%;
   width: 100%;
-  //background: linear-gradient(134.28deg, rgba(52, 48, 254, 0.85) 18.87%, rgba(102, 48, 254, 0.85) 77.3%);
-  background: rgba(52,48,254,0.85);
 }
+.section-blog-overlay, .section-categories-overlay {
+  background: rgba(52,48,254,0.85);
+  //background: linear-gradient(134.28deg, rgba(52, 48, 254, 0.85) 18.87%, rgba(102, 48, 254, 0.85) 77.3%);
+}
+.section-reading-overlay {
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.96) 18.87%, rgba(255, 255, 255, 0.8) 77.3%)
+}
+
 .card-label {
     display: inline-block;
     padding: 6px 10px 4px;
