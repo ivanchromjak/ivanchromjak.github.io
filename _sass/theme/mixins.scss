@@ -660,3 +660,8 @@ footer {
       border: 0;
   }
 }
+@mixin hook-container-misc(){
+  .container-xsmall {
+    max-width: 600px;
+  }
+}

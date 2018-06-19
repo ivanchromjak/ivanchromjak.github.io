@@ -72,6 +72,8 @@ collections:
     output: false
   journal:
     output: false
+  fallacies:
+    output: false
 
 # Defaults
 defaults:
