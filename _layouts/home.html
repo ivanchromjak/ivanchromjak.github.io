@@ -19,6 +19,12 @@ layout: default
           <p class="uk-margin-remove-bottom">Multi-talented web UX/UI designer and developer, Envato Elite author with over 12000 customers and the creator of the best selling WordPress knowledge base plugin.</p>
         </div>
 
+        <div class="uk-width-1-1 uk-width-3-5@m">
+          <div class="uk-margin-medium-top">
+            {% include newsletter.html %}
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -29,41 +35,75 @@ layout: default
 
 </div>
 
-{% include newsletter.html %}
-
-<div id="work" class="uk-background-muted uk-section uk-section-large work">
-
-    <div class="uk-container">
-      {% for item in site.work reversed %}
-        {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
-        {% if thecycle == 'left' %}
-        <div class="uk-card uk-grid-collapse uk-margin-xlarge" data-uk-grid>
-            <div class="uk-card-media-left uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true;">
-                <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
-                <canvas width="900" height="675"></canvas></a>
-            </div>
-            <div class="uk-width-2-5@m uk-flex uk-flex-middle">
-                <div class="uk-card-body uk-card-large">
-                    <a class="hvr-forward" href="{{ item.url }}"><h3 class="uk-card-title">{{ item.title }}</h3>{% include icon-arrow-right.svg %}</a>
-                </div>
-            </div>
-        </div>
-        {% else %}
-        <div class="uk-card uk-grid-collapse uk-margin-xlarge" data-uk-grid>
-            <div class="uk-flex-last@m uk-card-media-right uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true;">
-                <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
-                <canvas width="900" height="675"></canvas></a>
-            </div>
-            <div class="uk-width-2-5@m uk-flex uk-flex-middle">
-                <div class="uk-card-body uk-card-large">
-                    <a class="hvr-forward" href="{{ item.url }}"><h3 class="uk-card-title">{{ item.title }}</h3>{% include icon-arrow-right.svg %}</a>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
+<div class="uk-section uk-section-primary uk-section-large uk-light">
+  <div class="uk-container uk-container-small uk-text-center">
+    <h2 class="uk-margin-medium-bottom">Latest Posts</h2>
+  </div>
+  <div class="uk-container container-xsmall">
+    {% for post in site.posts limit:3 %}
+      <h3 class="uk-text-lead uk-margin hvr-forward"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} &rarr;</a></h3>
+    {% endfor %}
+  </div>
+  <div class="uk-container uk-container-small uk-text-center">
+    <a class="uk-button uk-button-default uk-margin-top" href="/one-percent-net-worth/">All Posts</a>
+  </div>
 </div>
 
-{% include newsletter.html %}
+<div class="uk-section uk-section-large">
+  <div class="uk-container uk-container-small uk-text-center">
+    <h2 class="uk-margin-medium-bottom">Latest Posts</h2>
+  </div>
+  <div class="uk-container container-xsmall">
+    {% for post in site.posts limit:3 %}
+      <h3 class="uk-text-lead uk-margin hvr-forward"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} &rarr;</a></h3>
+    {% endfor %}
+  </div>
+  <div class="uk-container uk-container-small uk-text-center">
+    <a class="uk-button uk-button-default uk-button-small uk-margin-top" href="/blog/">All Posts</a>
+  </div>
+</div>
+
+<div id="work" class="uk-background-muted uk-section uk-section-large work">
+  <div class="uk-container">
+    {% for item in site.work reversed %}
+      {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
+      {% if thecycle == 'left' %}
+      <div class="uk-card uk-grid-collapse uk-margin-xlarge" data-uk-grid>
+          <div class="uk-card-media-left uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true;">
+              <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
+              <canvas width="900" height="675"></canvas></a>
+          </div>
+          <div class="uk-width-2-5@m uk-flex uk-flex-middle">
+              <div class="uk-card-body uk-card-large">
+                  <a class="hvr-forward" href="{{ item.url }}"><h3 class="uk-card-title">{{ item.title }}</h3>{% include icon-arrow-right.svg %}</a>
+              </div>
+          </div>
+      </div>
+      {% else %}
+      <div class="uk-card uk-grid-collapse uk-margin-xlarge" data-uk-grid>
+          <div class="uk-flex-last@m uk-card-media-right uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true;">
+              <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
+              <canvas width="900" height="675"></canvas></a>
+          </div>
+          <div class="uk-width-2-5@m uk-flex uk-flex-middle">
+              <div class="uk-card-body uk-card-large">
+                  <a class="hvr-forward" href="{{ item.url }}"><h3 class="uk-card-title">{{ item.title }}</h3>{% include icon-arrow-right.svg %}</a>
+              </div>
+          </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="uk-section uk-section-large uk-background-secondary uk-light">
+  <div class="uk-container uk-container-small uk-text-center">
+    <h2>Newsletter</h2>
+    <p class="uk-text-lead uk-margin-medium-bottom">Sign up now and join me on the journey! You will receive a weekly newsletter of my articles on achieving goals.</p>
+  </div>
+  <div class="uk-container container-xsmall">
+
+    {% include newsletter.html %}
+
+  </div>
+</div>
