@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="uk-margin-large-top uk-margin-xlarge-bottom">
+  <div class="uk-container uk-container-small">
+
+    <article class="uk-article">
+        <h1 class="uk-article-title">{{ page.title | escape }} {% if page.subtitle %}<span>{{ page.subtitle | escape }}</span>{% endif %}</h1>
+
+
+        <div class="article-content">
+          {{ content }}
+        </div>
+
+        <div class="uk-article-meta uk-margin-large-top uk-margin-medium-bottom">
+            {% include post-meta.html %}
+        </div>
+
+        {% include share.html %}
+
+        {% if site.disqus.shortname %}
+          {% include disqus_comments.html %}
+        {% endif %}
+
+    </article>
+
+  </div>
+</div>

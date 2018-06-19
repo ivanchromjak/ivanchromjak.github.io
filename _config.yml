@@ -74,6 +74,8 @@ collections:
     output: false
   fallacies:
     output: false
+  tools:
+    output: true
 
 # Defaults
 defaults:
@@ -89,3 +91,9 @@ defaults:
       type: learn
     values:
       layout: learn
+  # _tools
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: tools

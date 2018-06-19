@@ -35,17 +35,25 @@ layout: default
 
 </div>
 
-<div class="uk-section uk-section-primary uk-section-large uk-light">
+<div class="uk-section uk-section-secondary uk-section-large uk-light">
   <div class="uk-container uk-container-small uk-text-center">
-    <h2 class="uk-margin-medium-bottom">Latest Posts</h2>
+    <h2>1% Net Worth</h2>
+    <p class="uk-text-lead uk-margin-medium-bottom">Can someone with no money, education and connections become top 1% net worth individual? Join me on a jorney to find out, everything that I learn and experience is shared right here.</p>
+    <a class="uk-button uk-button-default uk-button-large uk-margin-top" href="/one-percent-net-worth/">Join The Journey</a>
+  </div>
+</div>
+
+<div class="uk-section uk-section-large uk-section-primary uk-light">
+  <div class="uk-container uk-container-small uk-text-center">
+    <h2 class="uk-margin-medium-bottom">Tools I Use</h2>
   </div>
   <div class="uk-container container-xsmall">
-    {% for post in site.posts limit:3 %}
+    {% for post in site.tools limit:3 %}
       <h3 class="uk-text-lead uk-margin hvr-forward"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} &rarr;</a></h3>
     {% endfor %}
   </div>
   <div class="uk-container uk-container-small uk-text-center">
-    <a class="uk-button uk-button-default uk-margin-top" href="/one-percent-net-worth/">All Posts</a>
+    <a class="uk-button uk-button-default uk-margin-top" href="/tools/">All Tools</a>
   </div>
 </div>
 
@@ -59,11 +67,11 @@ layout: default
     {% endfor %}
   </div>
   <div class="uk-container uk-container-small uk-text-center">
-    <a class="uk-button uk-button-default uk-button-small uk-margin-top" href="/blog/">All Posts</a>
+    <a class="uk-button uk-button-default uk-margin-top" href="/blog/">All Posts</a>
   </div>
 </div>
 
-<div id="work" class="uk-background-muted uk-section uk-section-large work">
+<!-- <div id="work" class="uk-background-muted uk-section uk-section-large work">
   <div class="uk-container">
     {% for item in site.work reversed %}
       {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
@@ -94,7 +102,7 @@ layout: default
       {% endif %}
     {% endfor %}
   </div>
-</div>
+</div> -->
 
 <div class="uk-section uk-section-large uk-background-secondary uk-light">
   <div class="uk-container uk-container-small uk-text-center">
@@ -102,8 +110,6 @@ layout: default
     <p class="uk-text-lead uk-margin-medium-bottom">Sign up now and join me on the journey! You will receive a weekly newsletter of my articles on achieving goals.</p>
   </div>
   <div class="uk-container container-xsmall">
-
     {% include newsletter.html %}
-
   </div>
 </div>
