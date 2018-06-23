@@ -1,6 +1,6 @@
 ---
 layout: post
 title: Add PayPal Donations to Jekyll Site
-categories: [Jekyll]
+categories: [Web Development]
 tags: paypal donations
 ---

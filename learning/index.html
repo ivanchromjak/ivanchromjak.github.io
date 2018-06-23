@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Reading List
+title: Learning List
 navbar: hero
 ---
 
-<div class="uk-position-relative uk-background-cover uk-background-center-center uk-background-norepeat uk-background-image@s" style="background-image: url(../assets/img/street.jpg);">
-  <div class="section-overlay section-reading-overlay uk-position-absolute "></div>
+<div class="uk-position-relative uk-background-cover uk-background-center-center uk-background-norepeat uk-background-image@s uk-light" style="background-image: url(../assets/img/street.jpg);">
+  <div class="section-overlay section-learning-overlay uk-position-absolute "></div>
 
   {% include navbar-static.html %}
 
@@ -35,15 +35,15 @@ navbar: hero
   </div>
 </div>
 
-<div class="uk-container uk-container-small">
+<div class="uk-container">
 
     <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
-      {% for item in site.reading reversed %}
+      {% for item in site.learning reversed %}
         <article class="uk-article">
           <div class="uk-grid-large" data-uk-grid>
 
             <div class="uk-width-1-4">
-                <a href="{{item.link}}" target="_blank"><img class="uk-width-1-1" src="{% if item.image contains '//' %}{{ item.image }}{% else %}{{ site.assets_reading | absolute_url }}{{ item.image }}{% endif %}" alt="{{item.title}}" data-uk-img></a>
+                <a href="{{item.link}}" target="_blank"><img class="uk-width-1-1" src="{% if item.image contains '//' %}{{ item.image }}{% else %}{{ site.assets_learning | absolute_url }}{{ item.image }}{% endif %}" alt="{{item.title}}" data-uk-img></a>
             </div>
             <div class="uk-width-3-4">
               <h2 class="uk-article-title uk-margin-small-bottom"><a href="{{item.link}}" target="_blank">{{item.title}}</a></h2>

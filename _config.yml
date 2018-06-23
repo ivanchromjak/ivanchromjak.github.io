@@ -42,7 +42,8 @@ footer_text:
 
 # Path to post content assets directory i.e post images, pdfs etc
 post_assets:        /assets/posts/
-assets_reading:     /assets/img/reading/
+assets_learning:    /assets/img/learning/
+assets_tools:       /assets/img/tools/
 assets_journal:     /assets/img/journal/
 
 # Build settings
@@ -66,9 +67,7 @@ sass:
 collections:
   work:
     output: true
-  learn:
-    output: true
-  reading:
+  learning:
     output: false
   journal:
     output: false
@@ -86,11 +85,11 @@ defaults:
     values:
       layout: work
   # _learn
-  - scope:
-      path: ""
-      type: learn
-    values:
-      layout: learn
+  # - scope:
+  #     path: ""
+  #     type: learn
+  #   values:
+  #     layout: learn
   # _tools
   - scope:
       path: ""

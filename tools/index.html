@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Tools
+title: Tools & Resources
+subtitle: Collection of tools that currently help me to achieve my goals
 navbar: hero
 ---
 
-<div class="uk-position-relative uk-background-cover uk-background-center-center uk-background-norepeat uk-background-image@s" style="background-image: url(../assets/img/street.jpg);">
-  <div class="section-overlay section-reading-overlay uk-position-absolute "></div>
+<div class="uk-position-relative uk-background-cover uk-background-center-center uk-background-norepeat uk-background-image@s uk-light" style="background-image: url(../assets/img/street.jpg);">
+  <div class="section-overlay section-tools-overlay uk-position-absolute "></div>
 
   {% include navbar-static.html %}
 
@@ -14,16 +15,7 @@ navbar: hero
       <div class="uk-margin-large-top uk-margin-xlarge-bottom uk-flex uk-flex-middle" uk-grid>
         <div class="uk-width-2-3@m">
           <h1 class="uk-heading-primary">{{ page.title | escape }}</h1>
-          <p class="uk-text-lead">Clear thinking requires hard work.</p>
-          <div class="uk-width-4-5@l">
-            <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-flex uk-margin-medium-top" uk-grid>
-              {% for category in topics %}
-                <div>
-                  <a href="#{{ category | slugify }}" class="button-category uk-width-1-1" data-uk-scroll="duration: 400; offset: 130">{{ category }}</a>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
+          <p class="uk-text-lead">{{ page.subtitle }}</p>
         </div>
         <div class="uk-width-expand@m uk-visible@m uk-text-center">
         </div>
@@ -32,17 +24,17 @@ navbar: hero
   </div>
 </div>
 
-<div class="uk-container uk-container-small">
+<div class="uk-container">
 
     <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
       {% for item in site.tools reversed %}
         <article class="uk-article">
-          <div data-uk-grid>
+          <div class="uk-grid-large" data-uk-grid>
 
-            <div class="uk-width-1-6">
-              
+            <div class="uk-width-1-4">
+              <img class="uk-width-1-1" src="{% if item.image contains '//' %}{{ item.image }}{% else %}{{ site.assets_tools | absolute_url }}{{ item.image }}{% endif %}" alt="{{item.title}}" data-uk-img>
             </div>
-            <div class="uk-width-5-6">
+            <div class="uk-width-3-4">
               <h2 class="uk-article-title uk-margin-small-bottom">{{item.title}}</h2>
               <div class="uk-text-large">{{ item.content }}</div>
             </div>

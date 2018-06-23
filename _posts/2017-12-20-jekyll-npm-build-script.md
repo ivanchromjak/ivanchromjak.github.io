@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Processes, Jekyll]
+categories: [Web Development]
 tags: npm
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [CSS, Standards]
+categories: [Web Development]
 tags: rem px css
 ---
 

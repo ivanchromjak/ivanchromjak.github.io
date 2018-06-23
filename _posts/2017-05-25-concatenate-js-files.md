@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Concatenate JS Files
-categories: [JavaScript, Jekyll]
+categories: [Web Development]
 tags: javascript assets
 ---
 

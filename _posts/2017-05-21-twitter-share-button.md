@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Jekyll]
+categories: [Web Development]
 tags: twitter share
 ---
 
