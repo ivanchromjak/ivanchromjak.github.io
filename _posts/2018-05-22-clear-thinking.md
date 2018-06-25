@@ -1,5 +1,5 @@
 ---
-categories: [Clear Thinking]
+categories: [Mind]
 image: https://source.unsplash.com/VL9ugqp_mko/195x260
 ---
 

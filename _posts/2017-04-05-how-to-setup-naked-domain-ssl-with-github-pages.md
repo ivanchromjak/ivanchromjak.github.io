@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How To Setup Naked Domain SSL With Github Pages
 categories: [Web Development]
 tags: ssl

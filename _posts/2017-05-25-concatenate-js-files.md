@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Concatenate JS Files
 categories: [Web Development]
 tags: javascript assets

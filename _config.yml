@@ -41,10 +41,7 @@ google_analytics: UA-111401253-1
 footer_text:
 
 # Path to post content assets directory i.e post images, pdfs etc
-post_assets:        /assets/posts/
-assets_learning:    /assets/img/learning/
-assets_tools:       /assets/img/tools/
-assets_journal:     /assets/img/journal/
+assets_posts:        /assets/posts/
 
 # Build settings
 markdown: kramdown
@@ -67,14 +64,6 @@ sass:
 collections:
   work:
     output: true
-  learning:
-    output: false
-  journal:
-    output: false
-  fallacies:
-    output: false
-  tools:
-    output: true
 
 # Defaults
 defaults:
@@ -84,15 +73,9 @@ defaults:
       type: work
     values:
       layout: work
-  # _learn
-  # - scope:
-  #     path: ""
-  #     type: learn
-  #   values:
-  #     layout: learn
-  # _tools
+  # _posts
   - scope:
       path: ""
-      type: tools
+      type: posts
     values:
-      layout: tools
+      layout: post

@@ -1,11 +1,9 @@
 ---
 layout: default
-title: Fallacies
-navbar: hero
 ---
 
-<div class="uk-position-relative uk-background-cover uk-background-center-center uk-background-norepeat uk-background-image@s" style="background-image: url(../assets/img/street.jpg);">
-  <div class="section-overlay section-reading-overlay uk-position-absolute "></div>
+<div class="uk-position-relative uk-background-cover uk-background-center-center uk-background-norepeat uk-background-image@s uk-light" style="background-image: url(../assets/img/street.jpg);">
+  <div class="section-overlay section-learning-overlay uk-position-absolute "></div>
 
   {% include navbar-static.html %}
 
@@ -14,7 +12,7 @@ navbar: hero
       <div class="uk-margin-large-top uk-margin-xlarge-bottom uk-flex uk-flex-middle" uk-grid>
         <div class="uk-width-2-3@m">
           <h1 class="uk-heading-primary">{{ page.title | escape }}</h1>
-          <p class="uk-text-lead">Clear thinking requires hard work.</p>
+          <p class="uk-text-lead uk-margin-remove-bottom">{{ page.subtitle }}</p>
           <div class="uk-width-4-5@l">
             <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-flex uk-margin-medium-top" uk-grid>
               {% for category in topics %}
@@ -32,24 +30,11 @@ navbar: hero
   </div>
 </div>
 
-<div class="uk-container uk-container-small">
-
-    <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
-      {% for item in site.fallacies reversed %}
-        <article class="uk-article">
-          <div data-uk-grid>
-
-            <div class="uk-width-1-6">
-              <input class="uk-checkbox" type="checkbox">
-            </div>
-            <div class="uk-width-5-6">
-              <h2 class="uk-article-title uk-margin-small-bottom">{{item.title}}</h2>
-              <div class="uk-text-large">{{ item.content }}</div>
-            </div>
-
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-
+<div class="uk-container uk-container-small categories">
+  <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h2 id="{{ category_name | slugify }}" class="uk-margin-medium-bottom category-title">{{ category_name }}</h2>
+    {% for post in site.categories[page.category_name] %}
+        <h3 class="uk-text-lead uk-margin hvr-forward"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
+    {% endfor %}
+  </div>
 </div>

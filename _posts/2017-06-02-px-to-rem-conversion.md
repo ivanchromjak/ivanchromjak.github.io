@@ -1,5 +1,4 @@
 ---
-layout: post
 categories: [Web Development]
 tags: rem px css
 ---

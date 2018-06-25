@@ -1,6 +1,7 @@
 ---
 title: "Nomad Capitalist: How to Reclaim Your Freedom with Offshore Bank Accounts, Dual Citizenship, Foreign Companies, and Overseas Investments"
 subtitle: The book helps entrepreneurs and investors keep more of their own money, live where they want, become citizens of the world, and improve their lives and the planet.
+categories: [Learning]
 author: Andrew Henderson
 tags: [nomad-capitalist]
 image: nomad-capitalist.jpg
