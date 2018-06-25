@@ -6,8 +6,9 @@ layout: default
   <div class="uk-container uk-container-small">
 
     <article class="uk-article">
-        <h1 class="uk-article-title">{{ page.title | escape }} {% if page.subtitle %}<span>{{ page.subtitle | escape }}</span>{% endif %}</h1>
+        <h1 class="uk-article-title">{{ page.title | escape }}</h1>
 
+        {% if page.subtitle %}<p class="uk-text-lead">{{ page.subtitle | escape }}</p>{% endif %}
 
         <div class="article-content">
           {{ content }}

@@ -1,7 +1,7 @@
 ---
 layout: category
-title: Learning
+title: Wealth
 subtitle: Some lorem ippppp
 navbar: hero
-category_name: Learning
+category_name: Wealth
 ---

@@ -1,6 +1,6 @@
 ---
 title: "The Art of Thinking Clearly: Better Thinking, Better Decisions"
-categories: [Learning]
+categories: [Learning, Reading]
 author: Rolf Dobelli
 tags: [the-art-of-thinking-clearly]
 image: the-art-of-thinking-clearly.jpg
