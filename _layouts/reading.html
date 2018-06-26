@@ -32,11 +32,22 @@ layout: default
   </div>
 </div>
 
-<div class="uk-container uk-container-small categories">
-  <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h2 id="{{ category_name | slugify }}" class="uk-margin-medium-bottom category-title">{{ category_name }}</h2>
-    {% for post in site.categories[page.category_name] %}
-        <h3 class="uk-text-lead uk-margin hvr-forward"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
-    {% endfor %}
-  </div>
+<div class="uk-container">
+    <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
+      {% for item in site.categories["Reading"] reversed %}
+        <article class="uk-article">
+          <div class="uk-grid-large" data-uk-grid>
+
+            <div class="uk-width-1-4">
+                <a href="{{item.link}}" target="_blank"><img class="uk-width-1-1" src="{% if item.image contains '//' %}{{ item.image }}{% else %}{{ site.assets_posts | absolute_url }}{{ item.image }}{% endif %}" alt="{{item.title}}" data-uk-img></a>
+            </div>
+            <div class="uk-width-3-4">
+              <h2 class="uk-article-title uk-margin-small-bottom"><a href="{{item.link}}" target="_blank">{{item.title}}</a></h2>
+              <p>by {{ item.author }}</p>
+              <div class="article-content">{{ item.content }}</div>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
 </div>

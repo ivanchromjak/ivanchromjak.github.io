@@ -41,7 +41,7 @@ google_analytics: UA-111401253-1
 footer_text:
 
 # Path to post content assets directory i.e post images, pdfs etc
-assets_posts:        /assets/posts/
+assets_posts:        /assets/img/posts/
 
 # Build settings
 markdown: kramdown
