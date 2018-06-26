@@ -1,5 +1,5 @@
 ---
-categories: [Mind]
+categories: [Mind, Tools]
 image: https://source.unsplash.com/VL9ugqp_mko/195x260
 ---
 

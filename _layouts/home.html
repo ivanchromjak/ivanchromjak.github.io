@@ -37,7 +37,7 @@ layout: default
 
 <div class="uk-section uk-section-secondary uk-section-large uk-light">
   <div class="uk-container uk-container-small uk-text-center">
-    <h2>1% Net Worth</h2>
+    <h2 class="uk-heading-primary">1% Net Worth</h2>
     <p class="uk-text-lead uk-margin-medium-bottom">Can someone with no money, education and connections become top 1% net worth individual? Join me on a jorney to find out, everything that I learn and experience is shared right here.</p>
     <a class="uk-button uk-button-default uk-button-large uk-margin-top" href="/wealth/">Join The Journey</a>
   </div>
@@ -45,10 +45,11 @@ layout: default
 
 <div class="uk-section uk-section-large uk-section-primary uk-light">
   <div class="uk-container uk-container-small uk-text-center">
-    <h2 class="uk-margin-medium-bottom">Tools I Use</h2>
+    <h2 class="uk-heading-primary uk-margin-medium-bottom">Tools I Use</h2>
+    <p class="uk-text-lead uk-margin-medium-bottom">Resources and tools to help you focus and what is important</p>
   </div>
   <div class="uk-container container-xsmall">
-    {% for post in site.tools limit:3 %}
+    {% for post in site.categories["Tools"] limit:3 %}
       <h3 class="uk-text-lead uk-margin hvr-forward"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} &rarr;</a></h3>
     {% endfor %}
   </div>
@@ -57,12 +58,22 @@ layout: default
   </div>
 </div>
 
+<div class="uk-section uk-section-large uk-section-secondary uk-light">
+  <div class="uk-container uk-container-small uk-text-center">
+    <h2 class="uk-heading-primary uk-margin-medium-bottom">Reading List</h2>
+    <p class="uk-text-lead uk-margin-medium-bottom">Books to help you focus and what is important</p>
+  </div>
+  <div class="uk-container uk-container-small uk-text-center">
+    <a class="uk-button uk-button-default uk-margin-top" href="/reading/">See Reading List</a>
+  </div>
+</div>
+
 <div class="uk-section uk-section-large">
   <div class="uk-container uk-container-small uk-text-center">
-    <h2 class="uk-margin-medium-bottom">Latest Posts</h2>
+    <h2 class="uk-heading-primary uk-margin-medium-bottom">Latest Posts</h2>
   </div>
   <div class="uk-container container-xsmall">
-    {% for post in site.posts limit:3 %}
+    {% for post in site.categories["Blog"] limit:3 %}
       <h3 class="uk-text-lead uk-margin hvr-forward"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} &rarr;</a></h3>
     {% endfor %}
   </div>
@@ -106,7 +117,7 @@ layout: default
 
 <div class="uk-section uk-section-large uk-background-secondary uk-light">
   <div class="uk-container uk-container-small uk-text-center">
-    <h2>Newsletter</h2>
+    <h2 class="uk-heading-primary">Newsletter</h2>
     <p class="uk-text-lead uk-margin-medium-bottom">Sign up now and join me on the journey! You will receive a weekly newsletter of my articles on achieving goals.</p>
   </div>
   <div class="uk-container container-xsmall">
