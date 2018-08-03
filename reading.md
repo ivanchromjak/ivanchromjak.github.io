@@ -1,7 +1,7 @@
 ---
 layout: reading
 title: Reading List
-subtitle: Some lorem ippppp
+subtitle:
 navbar: hero
 category_name: Reading
 ---

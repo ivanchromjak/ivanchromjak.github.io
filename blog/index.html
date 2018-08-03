@@ -44,7 +44,7 @@ categories_display: [Learning, Wealth, Body, Mind, Tools, Web Development ]
 
     {% for category in page.categories_display %}
       <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
-        <h2 id="{{ category | slugify }}" class="uk-margin-medium-bottom category-title">{{ category }}</h2>
+        <h2 id="{{ category | slugify }}" class="uk-margin-medium-bottom category-title uk-heading-primary">{{ category }}</h2>
         {% for post in site.categories[category] %}
             <h3 class="uk-text-lead uk-margin hvr-forward"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
         {% endfor %}
@@ -56,7 +56,7 @@ categories_display: [Learning, Wealth, Body, Mind, Tools, Web Development ]
     {% for category in site.categories %}
       {% capture category_name %}{{ category | first }}{% endcapture %}
       <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
-        <h2 id="{{ category_name | slugify }}" class="uk-margin-medium-bottom category-title">{{ category_name }}</h2>
+        <h2 id="{{ category_name | slugify }}" class="uk-margin-medium-bottom category-title uk-heading-primary">{{ category_name }}</h2>
         {% for post in site.categories[category_name] %}
             <h3 class="uk-text-lead uk-margin hvr-forward"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
         {% endfor %}

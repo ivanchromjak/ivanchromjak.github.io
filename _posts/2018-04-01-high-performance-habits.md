@@ -1,6 +1,6 @@
 ---
 title: "High Performance Habits: How Extraordinary People Become That Way"
-categories: [Learning, Reading]
+categories: [Reading]
 author: Brendon Burchard
 tags: [high-performance-habits]
 image: high-performance-habits.jpg

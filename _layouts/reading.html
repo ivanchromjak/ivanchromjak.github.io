@@ -15,6 +15,12 @@ layout: default
           {% if page.subtitle %}
             <p class="uk-text-lead uk-margin-remove-bottom">{{ page.subtitle }}</p>
           {% endif %}
+
+          <blockquote class="uk-text-lead">
+              <p class="uk-margin-small-bottom">It is what you read when you don't have to that determines what you will be when you can't help it.</p>
+              <footer>Oscar Wilde</footer>
+          </blockquote>
+
           <div class="uk-width-4-5@l">
             <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-flex uk-margin-medium-top" uk-grid>
               {% for category in topics %}
@@ -34,7 +40,7 @@ layout: default
 
 <div class="uk-container">
     <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom">
-      {% for item in site.categories["Reading"] reversed %}
+      {% for item in site.categories["Reading"] %}
         <article class="uk-article">
           <div class="uk-grid-large" data-uk-grid>
 
