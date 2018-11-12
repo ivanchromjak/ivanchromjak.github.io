@@ -1,5 +1,5 @@
 ---
-title: Do self-help books add value to your life?
+title: Do Self-help Books Add Value To Your Life?
 layout: post
 categories: [Life]
 ---
