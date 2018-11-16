@@ -3,6 +3,10 @@ layout: post
 categories: [Life]
 ---
 
-Why are we hoarding thousands of photographs? Trying to amass to our life memory bank. Dreaming of one day cozing up on the sofa with our children or friends and flick through ten thousand photos. Feeling proud of our moments and travels. You would get tired after a few hundred photos, and your friends long bored to death, looking for an excuse to leave.
+Positive thinking has been helping us for a long time now. It gives us a more optimistic outlook, lets us look for solutions and drives us to improve our selves and our environment.
 
-Life happens now, moment by moment. It is better to experience beautiful moments instead of worrying about future memories. Enjoy the moment instead of taking photos of it.
+Unfortunately, sometimes it is accepted dogmatically as a single solution to our problems. Without consideration, some people are quick to point out that you are been negative when voicing a concern. This can be dangerous; it prevents us from considering all possible outcomes of a situation, even the negative one and plan for it. 
+
+Whenever I feel anxiety or fear over a situation, I ask myself "What is the worst that can happen?" I try to explore all worst possible scenarios and how I could deal with them. Despite what the "positive thinking" movement claims it does not make me miserable, quite the opposite.
+
+Once I explore the possible negative outcomes, I take additional steps to prevent them or minimize their impact. Secondly, I usually realize that that worst case scenario isn't as bad as I thought.  This releases a lot of the anxiety and stress from the situation, making me feel more positive and more likely to handle the situation better.
