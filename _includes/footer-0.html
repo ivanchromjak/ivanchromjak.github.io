@@ -1,0 +1,29 @@
+<footer class="uk-section uk-section-large uk-section-secondary uk-light uk-text-center uk-margin-xlarge-top">
+    <div class="uk-container uk-container-small">
+
+        <div data-uk-grid class="uk-child-width-auto@s uk-grid-large uk-flex-center social-links">
+            {% if site.author.github %}
+            <div>
+                <h4><a target="_blank" href="https://github.com/{{ site.author.github | escape }}">GitHub</a></h4>
+            </div>
+            {% endif %}
+            {% if site.author.twitter %}
+            <div>
+                <h4><a target="_blank" href="https://twitter.com/{{ site.author.twitter | escape }}">Twitter</a></h4>
+            </div>
+            {% endif %}
+            {% if site.author.linkedin %}
+            <div>
+                <h4><a target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin | escape }}">LinkedIn</a></h4>
+            </div>
+            {% endif %}
+        </div>
+
+        {% if site.footer_text %}
+        <div class="uk-margin-large-top uk-text-large">{{ site.footer_text }}</div>
+        {% endif %}
+
+        <div class="uk-margin-xlarge-top"><a class="uk-logo" href="{{ "/" | relative_url }}"><img src="/assets/img/logo-light.png" alt="Ivan"></a></div>
+
+    </div>
+</footer>

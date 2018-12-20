@@ -1,7 +1,11 @@
 ---
-title: Minimal FAQ Template
+title: Minimal Helpdesk HTML Template
 image: minimal_th.png
-date: 2018-01-25
+date: 2017-11-01
+type: HTML
+excerpt: Self-service support site HTML template with clean, minimalistic design.
+envato: https://themeforest.net/item/minimal-helpdesk-customer-support-html-template/20863807
+github: 
 ---
 
 Template was developed for customers requiring a FAQ or knowledge base customer helpdesk site with small to medium number of articles with focuses on content and ease of use. 

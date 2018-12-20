@@ -30,40 +30,68 @@ layout: default
 
 </div>
 
+<div class="uk-section uk-section-large uk-section-muted">
+  <div class="uk-container">
+    <div data-uk-grid>
+      <div class="uk-width-1-2@m">
+        <h2 class="uk-heading-hero">Skills & Tools</h2>
+      </div>
+      <div class="uk-width-1-2@m">
 
-
-
-<div id="work" class="uk-background-muted uk-section uk-section-large">
-
-    <div class="uk-container">
-      {% for item in site.work reversed %}
-        {% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
-        {% if thecycle == 'left' %}
-        <div class="uk-card uk-grid-collapse uk-margin-xlarge" data-uk-grid>
-            <div class="uk-card-media-left uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true;">
-                <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
-                <canvas width="900" height="675"></canvas></a>
-            </div>
-            <div class="uk-width-2-5@m uk-flex uk-flex-middle">
-                <div class="uk-card-body uk-card-large">
-                    <a class="hvr-forward" href="{{ item.url }}"><h3 class="uk-card-title">{{ item.title }}</h3>{% include icon-arrow-right.svg %}</a>
-                </div>
-            </div>
+        <div class="uk-child-width-expand@m uk-grid-large" data-uk-grid>
+          <div>
+            <!-- <h4 class="uk-margin-medium-bottom">Web Design</h4> -->
+            <ul class="uk-list uk-text-lead">
+                <li>UX / UI Design</li>
+                <li>WordPress Development</li>
+                <li>Jekyll Theme Development</li>
+                <li>HTML5, CSS3, Less, Sass</li>
+                <li>JavaScript, jQuery</li>
+                <li>PHP, Liquid</li>
+                <li>Npm, Gulp, Git</li>
+                <li>Bootstrap, Uikit</li>
+            </ul>
+          </div>
         </div>
-        {% else %}
-        <div class="uk-card uk-grid-collapse uk-margin-xlarge" data-uk-grid>
-            <div class="uk-flex-last@m uk-card-media-right uk-cover-container uk-width-expand@m uk-border-rounded uk-box-shadow-large" data-uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true;">
-                <a href="{{ item.url }}"><img src="{{ site.post_assets }}{{ item.image }}" alt="{{ item.title }}" data-uk-cover>
-                <canvas width="900" height="675"></canvas></a>
-            </div>
-            <div class="uk-width-2-5@m uk-flex uk-flex-middle">
-                <div class="uk-card-body uk-card-large">
-                    <a class="hvr-forward" href="{{ item.url }}"><h3 class="uk-card-title">{{ item.title }}</h3>{% include icon-arrow-right.svg %}</a>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-      {% endfor %}
+  
+      </div>
     </div>
-
+  </div>
 </div>
+
+<div class="uk-section uk-section-large uk-section-secondary uk-light">
+  <div class="uk-container work-section">
+    <div data-uk-grid>
+      <div class="uk-width-2-5@m">
+        <div uk-scrollspy="cls: uk-animation-fade; target: .work-title;">
+          <h2 uk-sticky="offset: 130; media: @m; bottom: .work-section;" class="uk-heading-hero work-title">Work</h2>
+        </div>
+      </div>
+      <div class="uk-width-expand@m">
+        <table class="uk-table table-large uk-table-responsive uk-table-justify">
+          <tbody>
+            {% for item in site.work reversed %}
+              <tr data-uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                <td class="uk-text-small uk-text-uppercase uk-width-1-6 uk-text-nowrap"><span><b>{{ item.date | date: "%b %Y" }}</b></span></td>
+                <td class="uk-table-expand">
+                  <h4 class="uk-margin-remove">{{ item.title }}</h4>
+                  <p>{{ item.excerpt }}</p>
+                  {% if item.envato %}
+                    <p><a class="hvr-forward" target="_blank" href="{{ item.envato }}">Envato &xrarr;</a></p>
+                  {% endif %}
+                  {% if item.github %}
+                    <p><a class="hvr-forward" target="_blank" href="{{ item.github }}">GitHub &xrarr;</a></p>
+                  {% endif %}
+                </td>
+                <!-- <td class="uk-width-1-6">
+                    <span class="uk-text-muted uk-text-nowrap"><b>{{ item.type }}</b></span>
+                </td> -->
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+

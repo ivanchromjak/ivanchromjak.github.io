@@ -2,8 +2,12 @@
 $accent-color: #304FFE;
 $global-secondary-background: #141415;
 $global-primary-background: #304FFE;
+$global-danger-background: #dd1144;
 $global-link-color: $global-secondary-background;
 $global-link-hover-color: $global-secondary-background;
+
+// $card-large-body-padding-horizontal-l: 60px; //        $global-large-gutter !default;
+// $card-large-body-padding-vertical-l:            $global-large-gutter !default;
 
 $global-muted-color: #6f6f73;
 $inverse-global-muted-color: #fff;
@@ -21,9 +25,9 @@ $base-heading-font-family: "Futura-Bold", system-ui;
 
 //$base-heading-font-weight: 500;
 $base-heading-color: $global-secondary-background;
-$heading-hero-font-size:                         2.5rem;
-$heading-hero-font-size-s:                       3.4375rem;
-$heading-hero-font-size-m:                       4.313rem;
+$heading-hero-font-size:                         3rem;
+$heading-hero-font-size-s:                       4rem;
+$heading-hero-font-size-m:                       5.313rem;
 
 $home-text-font-size: 2rem;
 $home-text-font-size-s: 2.75rem;
