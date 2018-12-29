@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/ivanchromjak/jekyll-uikit#readme",
   "dependencies": {
-    "simple-jekyll-search": "^1.5.0",
-    "system-font-css": "^2.0.1",
-    "uikit": "^3.0.0-beta.31"
+    "simple-jekyll-search": "^1.7.2",
+    "system-font-css": "^2.0.2",
+    "uikit": "^3.0.0-rc.25"
   },
   "devDependencies": {
     "ncp": "latest"

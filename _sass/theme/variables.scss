@@ -1,11 +1,11 @@
 
-$accent-color: #304FFE;
 $global-secondary-background: #141415;
-$global-primary-background: #304FFE;
+$global-primary-background: #fe3043;
 $global-danger-background: #dd1144;
 $global-link-color: $global-secondary-background;
-$global-link-hover-color: $global-secondary-background;
+$global-link-hover-color: $global-primary-background;
 
+$base-link-hover-text-decoration: none;
 // $card-large-body-padding-horizontal-l: 60px; //        $global-large-gutter !default;
 // $card-large-body-padding-vertical-l:            $global-large-gutter !default;
 
@@ -13,17 +13,17 @@ $global-muted-color: #6f6f73;
 $inverse-global-muted-color: #fff;
 $inverse-global-color: #fff;
 
-$global-color: #2f2f31; //$global-secondary-background;
+$global-color: #111; // #2f2f31; //$global-secondary-background;
 $base-code-color: lighten($global-secondary-background, 15%);
 
 $base-em-color: $global-color;
 //$container-max-width: 1000px;
-$container-small-max-width: 700px;
+$container-xsmall-max-width: 640px;
 
-$global-font-family: "Futura-Book", system-ui;
-$base-heading-font-family: "Futura-Bold", system-ui;
+$global-font-family: "Cormorant Garamond", system-ui;
+$base-heading-font-family: "Geomanist", system-ui;
 
-//$base-heading-font-weight: 500;
+$base-heading-font-weight: 400;
 $base-heading-color: $global-secondary-background;
 $heading-hero-font-size:                         3rem;
 $heading-hero-font-size-s:                       4rem;
@@ -35,6 +35,7 @@ $home-text-font-size-m: 3.75rem;
 
 $heading-hero-line-height-m:                     1.2;
 
+$article-title-font-size-m: 2.5rem;
 $article-meta-font-size: 	1.0625rem;
 $article-meta-line-height: 1.5;
 

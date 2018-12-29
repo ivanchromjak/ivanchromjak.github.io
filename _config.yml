@@ -14,13 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ivan Chromjak
+title: Clearly
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Full stack web developer and Envato Elite author, making beautiful and useful things on the web since 2002 and the author of this blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:title/
 url: "https://ivanchromjak.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+paginate:           7 # Number of posts displayed on blog page
+paginate_path:      "/:num/" # Blog path
 
 logo: "/assets/img/logo-dark.png"
 social:

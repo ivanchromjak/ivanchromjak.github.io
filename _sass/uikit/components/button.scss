@@ -134,7 +134,7 @@ $button-link-disabled-color:                     $global-muted-color !default;
 
 /* Hover */
 .uk-button:hover {
-    /* 8 */
+    /* 9 */
     text-decoration: none;
     @if(mixin-exists(hook-button-hover)) {@include hook-button-hover();}
 }
@@ -365,8 +365,6 @@ $button-link-disabled-color:                     $global-muted-color !default;
 
 .uk-button-group {
     /* 1 */
-    display: -ms-inline-flexbox;
-    display: -webkit-inline-flex;
     display: inline-flex;
     /* 2 */
     vertical-align: middle;

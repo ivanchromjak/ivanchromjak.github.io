@@ -14,7 +14,13 @@
    Component: Slideshow
  ========================================================================== */
 
+/*
+ * 1. Prevent tab highlighting on iOS.
+ */
+
 .uk-slideshow {
+    /* 1 */
+    -webkit-tap-highlight-color: transparent;
     @if(mixin-exists(hook-slideshow)) {@include hook-slideshow();}
 }
 
@@ -52,6 +58,7 @@
  * 2. Take the full width
  * 3. Clip child elements, e.g. for `uk-cover`
  * 4. Optimize animation
+ * 5. Disable horizontal panning gestures in IE11 and Edge
  */
 
 .uk-slideshow-items > * {
@@ -66,6 +73,8 @@
     overflow: hidden;
     /* 4 */
     will-change: transform, opacity;
+    /* 5 */
+    touch-action: pan-y;
 }
 
 /*
