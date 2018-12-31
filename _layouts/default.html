@@ -7,7 +7,9 @@
 
     {% include menu-modal.html %}
 
-    {% include navbar-static.html %}
+    {% if page.navbar != 'hero' %}
+      {% include navbar-fixed.html %}
+    {% endif %}
 
     {{ content }}
 

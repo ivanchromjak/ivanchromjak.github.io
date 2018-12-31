@@ -7,8 +7,8 @@
 //                  `uk-visible-toggle`
 //                  `uk-hidden-hover`
 //                  `uk-invisible-hover`
-//                  `uk-hidden-touch`
-//                  `uk-hidden-notouch`
+//                  `uk-invisible-touch`
+//                  `uk-invisible-notouch`
 //
 // ========================================================================
 
@@ -95,26 +95,11 @@
 /* Hover
  ========================================================================== */
 
-/*
- * Hidden
- * Can't use `display: none` because it's not accessible through keyboard.
- */
+/* Hidden */
+.uk-visible-toggle:not(:hover):not(.uk-hover) .uk-hidden-hover { display: none !important; }
 
-.uk-visible-toggle:not(:hover):not(.uk-hover) .uk-hidden-hover:not(:focus) {
-    position: absolute !important;
-    width: 0 !important;
-    height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: hidden !important;
-}
-
-/*
- * Invisible
- * Can't use `visibility: hidden` because it's not accessible through keyboard.
- */
-
-.uk-visible-toggle:not(:hover):not(.uk-hover) .uk-invisible-hover:not(:focus) { opacity: 0 !important; }
+/* Invisible */
+.uk-visible-toggle:not(:hover):not(.uk-hover) .uk-invisible-hover { visibility: hidden !important; }
 
 
 /* Touch

@@ -7,7 +7,6 @@
 //
 // Modifiers:       `uk-slidenav-previous`
 //                  `uk-slidenav-next`
-//                  `uk-slidenav-large`
 //
 // ========================================================================
 
@@ -15,15 +14,12 @@
 // Variables
 // ========================================================================
 
-$slidenav-padding-vertical:                      5px !default;
-$slidenav-padding-horizontal:                    10px !default;
+$slidenav-padding:                               5px !default;
+$slidenav-color:                                 fade-out($global-color, 0.4) !default;
 
-$slidenav-color:                                 rgba($global-color, 0.5) !default;
-$slidenav-hover-color:                           rgba($global-color, 0.9) !default;
-$slidenav-active-color:                          rgba($global-color, 0.5) !default;
+$slidenav-hover-color:                           fade-out($global-color, 0.2) !default;
 
-$slidenav-large-padding-vertical:                10px !default;
-$slidenav-large-padding-horizontal:              $slidenav-large-padding-vertical !default;
+$slidenav-active-color:                          fade-out($global-color, 0.1) !default;
 
 
 /* ========================================================================
@@ -35,7 +31,7 @@ $slidenav-large-padding-horizontal:              $slidenav-large-padding-vertica
  */
 
 .uk-slidenav {
-    padding: $slidenav-padding-vertical $slidenav-padding-horizontal;
+    padding: $slidenav-padding;
     color: $slidenav-color;
     @if(mixin-exists(hook-slidenav)) {@include hook-slidenav();}
 }
@@ -75,19 +71,12 @@ $slidenav-large-padding-horizontal:              $slidenav-large-padding-vertica
 }
 
 
-/* Size modifier
- ========================================================================== */
-
-.uk-slidenav-large {
-    padding: $slidenav-large-padding-vertical $slidenav-large-padding-horizontal;
-    @if(mixin-exists(hook-slidenav-large)) {@include hook-slidenav-large();}
-}
-
-
 /* Container
  ========================================================================== */
 
 .uk-slidenav-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     @if(mixin-exists(hook-slidenav-container)) {@include hook-slidenav-container();}
 }
@@ -103,7 +92,6 @@ $slidenav-large-padding-horizontal:              $slidenav-large-padding-vertica
 // @mixin hook-slidenav-active(){}
 // @mixin hook-slidenav-previous(){}
 // @mixin hook-slidenav-next(){}
-// @mixin hook-slidenav-large(){}
 // @mixin hook-slidenav-container(){}
 // @mixin hook-slidenav-misc(){}
 
@@ -111,9 +99,9 @@ $slidenav-large-padding-horizontal:              $slidenav-large-padding-vertica
 // Inverse
 // ========================================================================
 
-$inverse-slidenav-color:                        rgba($inverse-global-color, 0.7) !default;
-$inverse-slidenav-hover-color:                  rgba($inverse-global-color, 0.95) !default;
-$inverse-slidenav-active-color:                 rgba($inverse-global-color, 0.7) !default;
+$inverse-slidenav-color:                        fade-out($inverse-global-color, 0.3) !default;
+$inverse-slidenav-hover-color:                  fade-out($inverse-global-color, 0.2) !default;
+$inverse-slidenav-active-color:                 fade-out($inverse-global-color, 0.1) !default;
 
 
 

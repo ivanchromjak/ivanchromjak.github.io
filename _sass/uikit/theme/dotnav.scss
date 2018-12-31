@@ -7,19 +7,6 @@
 // Variables
 // ========================================================================
 
-$dotnav-item-background:                              transparent !default;
-
-//
-// New
-//
-
-$dotnav-item-border-width:                            1px !default;
-
-$dotnav-item-border:                                  rgba($global-color, 0.4) !default;
-$dotnav-item-hover-border:                            transparent !default;
-$dotnav-item-onclick-border:                          transparent !default;
-$dotnav-item-active-border:                           transparent !default;
-
 
 // Component
 // ========================================================================
@@ -28,11 +15,11 @@ $dotnav-item-active-border:                           transparent !default;
 
 
 
+// @mixin hook-dotnav-item-hover(){}
 
+// @mixin hook-dotnav-item-onclick(){}
 
-
-
-
+// @mixin hook-dotnav-item-active(){}
 
 
 // Miscellaneous
@@ -44,9 +31,8 @@ $dotnav-item-active-border:                           transparent !default;
 // Inverse
 // ========================================================================
 
-$inverse-dotnav-item-background:                      transparent !default;
-
 // @mixin hook-inverse-dotnav(){}
-
-
-
+// @mixin hook-inverse-dotnav-item(){}
+// @mixin hook-inverse-dotnav-item-hover(){}
+// @mixin hook-inverse-dotnav-item-onclick(){}
+// @mixin hook-inverse-dotnav-item-active(){}

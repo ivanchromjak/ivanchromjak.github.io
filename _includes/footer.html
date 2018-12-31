@@ -1,14 +1,18 @@
-<footer class="uk-section-default">
-    <div class="uk-section uk-section-large uk-background-cover uk-background-top-center" style="background-image: url(https://source.unsplash.com/kZLaSWR-7J4/1600x600)">
-        <div class="uk-container uk-container-xsmall">
+<footer class="uk-section uk-section-large uk-background-primary uk-light">
+    <div class="uk-container">
 
-            <div class="uk-child-width-expand@m uk-text-center" data-uk-grid>
+        <div data-uk-grid>
+            <div class="uk-width-1-2@m">
+                <h2 class="uk-heading-hero">Contact</h2>
+            </div>
+            <div class="uk-width-1-2@m">
+        
                 <div>
                     {% if site.author.email %}
         
                         {% assign plain_link = 'mailto:' | append: site.author.email %}
                         {% assign obfuscated_link = plain_link | url_encode | split: '' | reverse | join: '' %}
-                        <h5 class="uk-margin-remove uk-text-uppercase"><a class="email hvr-forward" href="{{ obfuscated_link }}">Email</a></h5>
+                        <h3 class="uk-margin-remove"><a class="email hvr-forward" href="{{ obfuscated_link }}">{{ site.author.email }}</a></h3>
         
                         <script>
                         var Contact = {};
@@ -35,22 +39,23 @@
                     {% endif %}
                 </div>
                 {% if site.author.github %}
-                <div>
-                    <h5 class="uk-margin-remove uk-text-uppercase"><a class="hvr-forward" target="_blank" href="https://github.com/{{ site.author.github | escape }}">GitHub</a></h5>
+                <div class="uk-margin-medium">
+                    <h3 class="uk-margin-remove"><a class="hvr-forward" target="_blank" href="https://github.com/{{ site.author.github | escape }}">GitHub</a></h3>
                 </div>
                 {% endif %}
                 {% if site.author.twitter %}
-                <div>
-                    <h5 class="uk-margin-remove uk-text-uppercase"><a class="hvr-forward" target="_blank" href="https://twitter.com/{{ site.author.twitter | escape }}">Twitter</a></h5>
+                <div class="uk-margin-medium">
+                    <h3 class="uk-margin-remove"><a class="hvr-forward" target="_blank" href="https://twitter.com/{{ site.author.twitter | escape }}">Twitter</a></h3>
                 </div>
                 {% endif %}
                 {% if site.author.linkedin %}
                 <div>
-                    <h5 class="uk-margin-remove uk-text-uppercase"><a class="hvr-forward" target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin | escape }}">LinkedIn</a></h5>
+                    <h3 class="uk-margin-remove"><a class="hvr-forward" target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin | escape }}">LinkedIn</a></h3>
                 </div>
                 {% endif %}
                 
             </div>
-        </div>                           
+        </div>
+                                
     </div>
 </footer>
