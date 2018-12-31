@@ -1,4 +1,10 @@
 {
+  "_args": [
+    [
+      "system-font-css@2.0.2",
+      "/Users/ivan/Dev/jekyll/ivanchromjak"
+    ]
+  ],
   "_from": "system-font-css@2.0.2",
   "_id": "system-font-css@2.0.2",
   "_inBundle": false,
@@ -16,13 +22,11 @@
     "fetchSpec": "2.0.2"
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/system-font-css/-/system-font-css-2.0.2.tgz",
-  "_shasum": "88c4ae30eda94bc60705cba7d66c8c822f3c47db",
-  "_spec": "system-font-css@2.0.2",
-  "_where": "/Users/ivan/Dev/jekyll/clarify",
+  "_spec": "2.0.2",
+  "_where": "/Users/ivan/Dev/jekyll/ivanchromjak",
   "author": {
     "name": "Jonathan Neal",
     "email": "jonathantneal@hotmail.com",
@@ -31,7 +35,6 @@
   "bugs": {
     "url": "https://github.com/jonathantneal/system-font-css/issues"
   },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Zach Leatherman",
@@ -42,7 +45,6 @@
   "dependencies": {
     "cpr": "^2.2.0"
   },
-  "deprecated": false,
   "description": "Use the native system font of the OS running the browser",
   "devDependencies": {},
   "engines": {
